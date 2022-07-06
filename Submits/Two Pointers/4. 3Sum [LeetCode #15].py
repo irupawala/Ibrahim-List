@@ -37,6 +37,6 @@ class Solution:
         return None       
         
 '''
-Time Complexity - NlogN + N^2
-Space Complexity - O(N) for sorting
-'''        
+Time Complexity - nlog(n) + O(n^2) (Two inner loops) =~ O(n^2)
+Space Complexity - O(1) or O(n) (because some libraries take O(n) for sorting)
+'''       
