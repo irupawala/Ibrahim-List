@@ -110,7 +110,14 @@ class Solution:
         res.reverse()
         return "".join(res)
       
- '''
- Time Complexity - O(V+N)
- Space Complexity - O(V+N)
- '''
+'''
+Time Complexity 
+In step ‘d’, each task can become a source only once and each edge (a rule) will be accessed and removed once. 
+Therefore, the time complexity of the above algorithm will be O(V+E)
+O(V+E), where ‘V’ is the total number of different characters and ‘E’ is the total number of the rules in the alien language. 
+Since, at most, each pair of words can give us one rule, therefore, we can conclude that the upper bound for the rules is O(N)
+where ‘N’ is the number of words in the input. So, we can say that the time complexity of our algorithm is O(V+N).
+
+Space Complexity
+The space complexity will be O(V+N), since we are storing all of the rules for each character in an adjacency list.
+'''
