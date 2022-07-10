@@ -1,4 +1,4 @@
-LintCode Link - 
+LintCode Link - https://www.lintcode.com/problem/892/
 
 ##############################     BFS SOLUTIONS      ############################
 
