@@ -1,3 +1,5 @@
+LintCode - https://www.lintcode.com/problem/605/
+
 from collections import deque
 
 def can_construct(originalSeq, sequences):
