@@ -1,5 +1,5 @@
 '''
-Grokking - https://www.educative.io/courses/grokking-the-coding-interview/3Ym408v7NQA
+Grokking - https://leetcode.com/problems/minimum-height-trees/
 '''
 
 from collections import deque
