@@ -28,6 +28,6 @@ class Solution:
         return max_depth
             
 '''
-Time Complexity - log(n)
+Time Complexity - O(n)
 Space Complexity - O(n) to store in the queue
 '''            
