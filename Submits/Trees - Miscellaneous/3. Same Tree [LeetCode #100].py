@@ -15,6 +15,6 @@ class Solution:
         return (self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right))
     
 '''
-Time Complexity - O(N)
+Time Complexity - O(Height)
 Space Complexity - O(1)
 '''
