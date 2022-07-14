@@ -26,7 +26,7 @@ class Solution:
         return root
     
 '''
-Time Complexity - O(N)
+Time Complexity - O(Height)
 Space Complexity - O(1)
 '''
 
