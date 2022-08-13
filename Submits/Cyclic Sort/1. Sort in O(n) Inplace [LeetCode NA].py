@@ -18,6 +18,6 @@ def main():
 main()
 
 '''
-Time Complexity - O(n)
+Time Complexity - O(n-1) + O(n) ~= O(n)
 Space Complexity - O(1)
 '''
