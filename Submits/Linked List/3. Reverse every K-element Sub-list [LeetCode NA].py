@@ -47,3 +47,8 @@ head.next.next = Node(3)
 head.next.next.next = Node(4)
 head.next.next.next.next = Node(5)
 print(S.reverseKGroup(head, 3))
+
+'''
+Time Complexity - O(N)
+Space Complexity - O(1)
+'''
