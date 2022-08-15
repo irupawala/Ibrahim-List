@@ -26,3 +26,8 @@ class MinStack:
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.getMin()
+
+'''
+Time Complexity - O(N)
+Space Complexity - O(N) for storing minStack
+'''
