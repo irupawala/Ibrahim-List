@@ -1,5 +1,7 @@
 # LeetCode Link - https://leetcode.com/problems/kth-largest-element-in-an-array/
 
+# Observe the NeetCode Solution Video
+
 from heapq import *
 
 class Solution:
