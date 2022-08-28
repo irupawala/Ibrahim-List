@@ -1,4 +1,9 @@
 class Solution:
+    # numTree[4] = numTree[0] * numTree[3] + # root 1
+    #              numTree[1] * numTree[2] + # root 2
+    #              numTree[2] * numTree[1] + # root 3
+    #              numTree[3] * numTree[0] # root 4
+                
     def numTrees(self, n: int) -> int:
         numTree = [1] * (n+1)
         for nodes in range(2, n+1):
