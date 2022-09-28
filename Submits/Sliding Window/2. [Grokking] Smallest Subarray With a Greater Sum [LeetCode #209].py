@@ -1,4 +1,5 @@
-LeetCode Link - https://leetcode.com/problems/minimum-size-subarray-sum/
+# LeetCode Link - https://leetcode.com/problems/minimum-size-subarray-sum/
+# Variable length Window
 
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
