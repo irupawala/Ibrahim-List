@@ -1,4 +1,5 @@
 # LeetCode - https://leetcode.com/problems/fruit-into-baskets/
+# Variable Length Window maintaining HashMap of Fixed Size
 
 class Solution:
     def totalFruit(self, fruits) -> int:
