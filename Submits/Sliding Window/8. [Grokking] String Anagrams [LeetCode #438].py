@@ -1,4 +1,5 @@
-LeetCode Link - https://leetcode.com/problems/find-all-anagrams-in-a-string/
+# LeetCode Link - https://leetcode.com/problems/find-all-anagrams-in-a-string/
+# Variable length Window requiring match of all chars in a HashMap
 
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
