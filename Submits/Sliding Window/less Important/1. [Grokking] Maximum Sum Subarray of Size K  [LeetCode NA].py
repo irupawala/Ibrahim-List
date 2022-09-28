@@ -1,3 +1,6 @@
+# Fixed Sliding Window
+
+
 def max_sub_array_of_size_k(k, arr):
     max_sum , window_sum = 0, 0
     window_start = 0
