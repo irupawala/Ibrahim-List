@@ -1,3 +1,5 @@
+# LeetCode - https://leetcode.com/problems/longest-repeating-character-replacement/
+
 class Solution:
     def characterReplacement(self, s, k) -> int:
         window_start, max_length, longest_char_length = 0, 0, 0
