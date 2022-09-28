@@ -1,4 +1,5 @@
-LeetCode Link - https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# LeetCode Link - https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# Variable length having HashMap of one value    
 
 '''
 class Solution:
