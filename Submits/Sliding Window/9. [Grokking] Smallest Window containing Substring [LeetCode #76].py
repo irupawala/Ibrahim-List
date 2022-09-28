@@ -1,4 +1,5 @@
-LeetCode Link - https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+# LeetCode Link - https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+# Variable length Window Shrinking when matched character is removed from the Window.
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
