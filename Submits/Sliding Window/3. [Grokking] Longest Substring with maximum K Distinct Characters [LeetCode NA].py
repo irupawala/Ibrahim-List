@@ -1,3 +1,5 @@
+# Variable Length Window 
+
 def longest_substring_with_k_distinct(str1, k): 
     window_start = 0
     max_length = 0
