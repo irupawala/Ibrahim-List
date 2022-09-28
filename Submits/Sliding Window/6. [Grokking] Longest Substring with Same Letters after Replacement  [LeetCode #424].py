@@ -1,4 +1,5 @@
 # LeetCode - https://leetcode.com/problems/longest-repeating-character-replacement/
+# Variable length Window shrinking when mimatch char is beyond threshold k
 
 class Solution:
     def characterReplacement(self, s, k) -> int:
