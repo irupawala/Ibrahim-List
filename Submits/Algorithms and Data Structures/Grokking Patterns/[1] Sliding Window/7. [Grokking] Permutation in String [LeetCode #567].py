@@ -1,5 +1,5 @@
 # LeetCode Link - https://leetcode.com/problems/permutation-in-string/
-# Variable length Window requiring match of all chars in a HashMap
+# Variable length with length modifying criteria of matching all the characters from HashMap with a sliding window in the given string
 
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
