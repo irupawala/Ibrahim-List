@@ -1,4 +1,4 @@
-# •	Variable length with fixed length HashMap as the length modifying criteria
+# Variable length with fixed length HashMap as the length modifying criteria
 
 def longest_substring_with_k_distinct(str1, k): 
     window_start = 0
