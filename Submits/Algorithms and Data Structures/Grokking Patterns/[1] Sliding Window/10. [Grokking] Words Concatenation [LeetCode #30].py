@@ -1,5 +1,5 @@
 # LeetCode Link - https://leetcode.com/problems/substring-with-concatenation-of-all-words/
-# Variable length Window matching words instead of Characters
+# Variable length with length modifying criteria of matching all the words from the given list with a sliding window in the given string
   
 class Solution:
     def findSubstring(self, s, words):
