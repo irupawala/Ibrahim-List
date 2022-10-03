@@ -1,5 +1,6 @@
 # LeetCode Link - https://leetcode.com/problems/backspace-string-compare/
 
+# Using Two Pointers Approach
 class Solution:
     def backspaceCompare(self, s, t):
         # use two pointer approach to compare the strings
@@ -34,6 +35,19 @@ class Solution:
             index -= 1  # skip a backspace or a valid character
 
         return index
+    
+# Using Build String Approach
+class Solution(object):
+    def backspaceCompare(self, S, T):
+        def build(S):
+            ans = []
+            for c in S:
+                if c != '#':
+                    ans.append(c)
+                elif ans:
+                    ans.pop()
+            return "".join(ans)
+        return build(S) == build(T)
     
 '''
 Time Complexity - O(N+M)
