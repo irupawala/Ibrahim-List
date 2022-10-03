@@ -1,5 +1,5 @@
 # LeetCode Link - https://leetcode.com/problems/longest-substring-without-repeating-characters/
-# Variable length having HashMap of one value    
+# Variable length with fixed length HashMap as the length modifying criteria  
 
 '''
 class Solution:
