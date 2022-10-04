@@ -87,3 +87,31 @@ class Solution:
 Time Complexity - O(nlogn) for sorting
 Space Complexity - O(n)
 '''
+
+
+# Ibrahim Solution
+
+class Solution:
+    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        start, end = 0, 1
+        start_end_list = []
+        for meeting in intervals:
+            start_end_list.append((meeting[start], "s"))
+            start_end_list.append((meeting[end], "e"))
+            
+        start_end_list.sort()
+        
+        maxMeetingRoom = 1
+        roomCount = 0
+        for time in start_end_list:
+            if time[1] == "s": roomCount += 1
+            else: roomCount -= 1
+            #print(time, roomCount)
+            maxMeetingRoom = max(maxMeetingRoom, roomCount)
+            
+        return maxMeetingRoom
+    
+'''
+Time Complexity - O(nlogn)
+Space Complexity - O(2n) for start_end_list
+'''
