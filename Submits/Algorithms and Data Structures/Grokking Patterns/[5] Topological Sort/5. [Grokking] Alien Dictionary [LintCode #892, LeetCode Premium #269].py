@@ -1,4 +1,5 @@
-LintCode Link - https://www.lintcode.com/problem/892/
+# LintCode Link - https://www.lintcode.com/problem/892/
+# LeetCode Link - https://leetcode.com/problems/alien-dictionary/
 
 ##############################     BFS SOLUTIONS      ############################
 

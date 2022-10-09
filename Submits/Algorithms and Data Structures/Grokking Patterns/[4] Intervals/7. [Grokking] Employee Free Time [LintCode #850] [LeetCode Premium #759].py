@@ -120,3 +120,35 @@ class Solution:
 Time Complexity - O(nlogk), where n is total number of intervals and k is total number of employees
 Space Complexity - O(k), because at anytime we will not have more than k elements in heap 
 '''
+
+
+# Ibrahim Solution
+
+class Solution:
+    def employeeFreeTime(self, schedule: '[[Interval]]') -> '[Interval]':
+        time_list, result = [], []
+        for interval in schedule:
+            for emplpyee_time in interval:
+                time_list.append((emplpyee_time.start, 0))
+                time_list.append((emplpyee_time.end, 1))
+
+        time_list.sort()
+        
+        count = 0
+        for i in range(len(time_list)-1):
+            current_time = time_list[i]
+            next_time = time_list[i+1]
+            
+            if current_time[1] == 0: count+=1
+            if current_time[1] == 1: count-=1
+            
+            # count ensures that there are no meetings in between 
+            if current_time[1] == 1 and next_time[1] == 0 and count == 0:
+                result.append(Interval(current_time[0], next_time[0]))
+                
+        return result
+
+'''
+Time Complexity - O(nlogn)
+Space Complexity - O(n.n) # assuming every employee has n time intervals too
+'''

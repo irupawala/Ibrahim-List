@@ -1,4 +1,5 @@
 LintCode - https://www.lintcode.com/problem/605/
+LeetCode Premium - https://leetcode.com/problems/sequence-reconstruction/submissions/
 
 from collections import deque
 
