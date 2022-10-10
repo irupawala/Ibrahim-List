@@ -1,3 +1,5 @@
+# Leetcode link - https://leetcode.com/problems/find-the-duplicate-number/
+
 class Solution:
     def findDuplicate(self, nums):
         i = 0
