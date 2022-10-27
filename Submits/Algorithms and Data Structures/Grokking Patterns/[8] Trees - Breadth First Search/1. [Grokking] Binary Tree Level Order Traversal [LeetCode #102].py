@@ -34,7 +34,7 @@ class Solution(object):
 
 '''
 Time Complexity - O(n)
-Space Complexity - O(n)
+Space Complexity - O(W) ‘W’ is the maximum number of nodes on any level.
 '''
             
         

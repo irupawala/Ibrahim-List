@@ -1,4 +1,4 @@
-# LeetCode Link - https://leetcode.com/problems/sum-root-to-leaf-numbers/
+# LeetCode Link - https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree/
 
 class TreeNode:
     def __init__(self, val, left=None, right=None):
