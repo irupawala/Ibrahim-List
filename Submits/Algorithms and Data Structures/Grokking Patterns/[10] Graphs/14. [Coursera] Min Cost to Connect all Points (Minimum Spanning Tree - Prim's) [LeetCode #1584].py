@@ -1,4 +1,4 @@
-LeetCode Link - https://leetcode.com/problems/min-cost-to-connect-all-points/
+# LeetCode Link - https://leetcode.com/problems/min-cost-to-connect-all-points/
 
 from heapq import *
 # Prim's Algorithm

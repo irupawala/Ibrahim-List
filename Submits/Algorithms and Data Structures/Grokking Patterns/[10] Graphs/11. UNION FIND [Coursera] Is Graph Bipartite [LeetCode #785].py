@@ -19,7 +19,7 @@ class Solution:
                             if color[j] == color[i]: return False
                         else:
                             color[j] = 1 - color[i]
-                        q.append(j)
+                            q.append(j)
         return True
 
     

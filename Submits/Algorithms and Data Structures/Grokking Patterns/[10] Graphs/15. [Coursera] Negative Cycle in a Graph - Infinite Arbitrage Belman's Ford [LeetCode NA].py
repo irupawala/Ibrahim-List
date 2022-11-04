@@ -1,6 +1,6 @@
 #Uses python3
 
-# Coursera Data Structures and Algorithms - Algorithms of Graph, Weekk4, Problem 2 detecting_anomalies
+# Coursera Data Structures and Algorithms - Algorithms of Graph, Week4, Problem 2 detecting_anomalies
 
 '''
 - Apply Bellman's Ford Algo |V|-1 times. If there are no negative cycles then all the nodes optimal

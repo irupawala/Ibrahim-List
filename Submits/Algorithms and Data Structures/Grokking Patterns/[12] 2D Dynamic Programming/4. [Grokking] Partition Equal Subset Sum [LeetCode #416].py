@@ -1,3 +1,5 @@
+# LeetCode Link - https://leetcode.com/problems/partition-equal-subset-sum/
+
 class Solution:
     def canPartition(self, nums):
         if sum(nums)%2 == 1: return False
