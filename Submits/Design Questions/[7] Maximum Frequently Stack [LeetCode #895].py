@@ -1,3 +1,5 @@
+# LeetCode Link - https://leetcode.com/problems/maximum-frequency-stack/
+
 from heapq import *
 
 class Element:

@@ -41,8 +41,8 @@ class Solution:
         # move the element to the end and delete it
         heap[ind] = heap[-1]
         del heap[-1]
-        # we can use heapify to readjust the elements but that would be O(N),
-        # instead, we will adjust only one element which will O(logN)
+        # we can use heapify to readjust the elements but that would be O(k),
+        # instead, we will adjust only one element which will O(logk)
         if ind < len(heap):
             heapq._siftup(heap, ind)
             heapq._siftdown(heap, 0, ind)
@@ -54,3 +54,8 @@ class Solution:
             heappush(self.minHeap, -heappop(self.maxHeap))
         elif len(self.maxHeap) < len(self.minHeap):
             heappush(self.maxHeap, -heappop(self.minHeap))
+
+'''
+Time Complexity - O(N.log(K).log(K)) ~ O(N.log(K))
+Space Complexity - O(K), Ignoring O(N-K+1) space required for storing the result
+'''
