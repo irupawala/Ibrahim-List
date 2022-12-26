@@ -1,3 +1,5 @@
+# Leetcode Link - https://leetcode.com/problems/permutations/
+
 from collections import deque
 
 class Solution:
@@ -28,6 +30,6 @@ print(S.permute([1,2,3]))
 
 
 '''
-Time Complexity - O(N*N!)
+Time Complexity - O(N*N!). Isn't the time complexity O(N^2*N!) here, because N for outermost loop, N! for middle loop and N for innermost loop
 Space Complexity - O(N*N!)
 '''

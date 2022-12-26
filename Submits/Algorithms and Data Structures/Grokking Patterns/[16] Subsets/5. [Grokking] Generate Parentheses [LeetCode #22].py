@@ -1,7 +1,37 @@
+# LeetCode Link - https://leetcode.com/problems/generate-parentheses/
+
 #BFS Solution
 from collections import deque
 
+class ParenthesesString:
+    def __init__(self, str, openCount, closeCount):
+        self.str = str
+        self.openCount = openCount
+        self.closeCount = closeCount
+
 class Solution:
+
+    def generateParenthesis(self, num):
+        result = []
+        queue = deque()
+        queue.append(ParenthesesString("", 0, 0))
+        while queue:
+            ps = queue.popleft()
+            # if we've reached the maximum number of open and close parentheses, add to the result
+            if ps.openCount == num and ps.closeCount == num:
+                result.append(ps.str)
+            else:
+                if ps.openCount < num:  # if we can add an open parentheses, add it
+                    queue.append(ParenthesesString(ps.str + "(", ps.openCount + 1, ps.closeCount))
+
+                if ps.openCount > ps.closeCount:  # if we can add a close parentheses, add it
+                    queue.append(ParenthesesString(ps.str + ")", ps.openCount, ps.closeCount + 1))
+
+        return result     
+
+# Ibrahim Solution 
+
+'''    
     def generateParenthesis(self, n):
         result = []
         q = deque()
@@ -25,8 +55,7 @@ class Solution:
                     if len(closed_str) == 2*n: result.append(closed_str)
         
         return result
-
-
+'''
 
 # DFS Solution
 '''

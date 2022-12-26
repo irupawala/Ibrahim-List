@@ -1,5 +1,12 @@
+# Leetcode Link - https://leetcode.com/problems/different-ways-to-add-parentheses/
+
 class Solution:
     def diffWaysToCompute(self, expression: str) -> List[int]:
+        return diffWaysToComputeRecursive(self, {}, expression)
+    
+    def diffWaysToComputeRecursive(self, HashMap, expression):
+        if expression in HashMap: 
+            return HashMap[expression]
         result = []
         # base case: if the expression string is a number, parse and add it to output.
         if '+' not in expression and '-' not in expression and '*' not in expression:

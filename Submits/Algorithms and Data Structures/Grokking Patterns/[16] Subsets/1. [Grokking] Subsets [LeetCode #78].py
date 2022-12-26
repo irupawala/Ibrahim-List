@@ -1,3 +1,5 @@
+# LeetCode Link - https://leetcode.com/problems/subsets/
+
 # Using Subsets
 '''
 class Solution:
@@ -21,8 +23,8 @@ Time Complexity - O(N.2^N)
 Space Complexity - O(N.2^N)
 '''
 
-'''
 # Using Bit Manipulation
+'''
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:    
         subsets = []
@@ -58,7 +60,7 @@ class Solution:
             dfs(i+1)
             
             # Do not include nums[i]
-            subset.pop()
+            subset.pop() # backtracking
             dfs(i+1)
             
         dfs(0)

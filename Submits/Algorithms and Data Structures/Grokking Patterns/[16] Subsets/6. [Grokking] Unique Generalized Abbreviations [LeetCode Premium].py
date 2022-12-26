@@ -1,4 +1,4 @@
-LeetCode Link - LeetCode Premium
+# LeetCode Premium Link - https://leetcode.com/problems/generalized-abbreviation/
 
 # DFS
 def generate_generalized_abbreviation(word):
