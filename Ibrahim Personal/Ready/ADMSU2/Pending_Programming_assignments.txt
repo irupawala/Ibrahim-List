@@ -1,0 +1,14 @@
+AT - Wk4 6(R)
+DS - Wk1 5(WA), Wk4 (U), Wk5 2(U)
+AOG - Wk3 Bipartite (WA), Wk5 TSP
+AOS - Wk1 1(U), 2(U)
+AA&C - 1(N), 1(N), 1(N), 2(N) --> 4
+GAPC - 1(N), 1(N), 1(U) --> 0
+
+Optional Weeks:
+2. Streaming Algorithms - AA&C
+
+
+N - Not Solvable but tried
+U - Not Worthy. No Learning and too time consuming. Failed to be accepted by grader
+R - Remaining to Solve
