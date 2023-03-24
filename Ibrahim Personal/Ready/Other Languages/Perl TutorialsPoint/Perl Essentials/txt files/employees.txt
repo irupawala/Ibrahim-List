@@ -1,3 +1,0 @@
-First Name, Last Name, DOB, Gender, Location, ZIP
-Ibrahim, Rupawala, 21-Aug-91, Male, US, 95132
----End of file------End of file------End of file---

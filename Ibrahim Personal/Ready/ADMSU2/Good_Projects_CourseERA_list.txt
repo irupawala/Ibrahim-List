@@ -1,6 +1,0 @@
-https://www.coursera.org/specializations/learn-sql-basics-data-science
-https://www.coursera.org/specializations/discrete-mathematics
-https://www.coursera.org/learn/competitive-programming-core-skills
-https://www.coursera.org/specializations/data-science-statistics-machine-learning
-https://www.coursera.org/specializations/machine-learning-tensorflow-gcp
-https://www.coursera.org/specializations/machine-learning

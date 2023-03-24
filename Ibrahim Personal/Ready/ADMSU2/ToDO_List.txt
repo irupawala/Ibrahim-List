@@ -1,5 +1,0 @@
-- Make Links for Ibrahim List for each topic
-- Remove unnecessary topics
-- Spend half hour for system design 
-- Spend half hours for ML
-- Review Neetcode Solution for Kth largest Element in an Array - Quick Select 
