@@ -1,0 +1,4 @@
+p cnf 2 3 					sed 2 variables and 3 clauses and next 3 lines are 3 clauses
+1 2 0						
+1 -2 0						
+-1 -2 0						

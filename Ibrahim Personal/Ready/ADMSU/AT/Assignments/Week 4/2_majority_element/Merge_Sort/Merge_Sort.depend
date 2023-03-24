@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1584946404 source:c:\users\1000249643\desktop\programming langauages\algorithms and data structures udemy\assignments\week 4\2_majority_element\merge_sort\main.cpp
+	<algorithm>
+	<iostream>
+	<vector>
+

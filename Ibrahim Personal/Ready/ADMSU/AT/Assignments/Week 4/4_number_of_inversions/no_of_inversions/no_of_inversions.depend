@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1584946404 source:c:\users\1000249643\desktop\programming langauages\algorithms and data structures udemy\assignments\week 4\2_majority_element\merge_sort\main.cpp
+	<algorithm>
+	<iostream>
+	<vector>
+
+1584946404 source:c:\users\1000249643\desktop\programming langauages\algorithms and data structures udemy\assignments\week 4\4_number_of_inversions\improving quick sort\main.cpp
+	<algorithm>
+	<iostream>
+	<vector>
+
+1585011507 source:c:\users\1000249643\desktop\programming langauages\algorithms and data structures udemy\assignments\week 4\4_number_of_inversions\no_of_inversions\main.cpp
+	<iostream>
+	<vector>
+
+1585007907 source:c:\users\1000249643\desktop\desktop\programming langauages\ready\admsu2\at\assignments\week 4\4_number_of_inversions\no_of_inversions\main.cpp
+	<iostream>
+	<vector>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1583425041 source:c:\users\1000249643\desktop\programming langauages\algorithms and data structures udemy\assignments\week 3\4_maximum_advertisement_revenue\maximum_advertisement_revenue\main.cpp
+	<algorithm>
+	<iostream>
+	<vector>
+

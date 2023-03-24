@@ -1,0 +1,16 @@
+https://www.youtube.com/watch?v=Tl90tNtKvxs - Ford Fulkerson's in 5 mins
+https://www.youtube.com/watch?v=oHy3ddI9X3o - Maxflow - Mincut
+https://www.youtube.com/watch?v=Iwc3Uj4aaF4 - Ford Fulkerson's
+https://www.youtube.com/watch?v=3LG-My_MoWc - Ford Fulkerson's
+https://www.youtube.com/watch?v=Gtyq4_UYIOA - Ford Fulkerson's
+
+https://www.youtube.com/watch?v=RppuJYwlcI8 - Edmonds Karp Algo
+https://www.youtube.com/watch?v=_aWooet7O_4 - Edmonds Karp Algo
+
+https://www.youtube.com/watch?v=GhjwOiJ4SqU&t=331s - Bipartite Matching
+https://www.geeksforgeeks.org/maximum-bipartite-matching/
+
+
+https://www.youtube.com/watch?v=q5Uw2247hwg - Konig's Thoerem
+
+

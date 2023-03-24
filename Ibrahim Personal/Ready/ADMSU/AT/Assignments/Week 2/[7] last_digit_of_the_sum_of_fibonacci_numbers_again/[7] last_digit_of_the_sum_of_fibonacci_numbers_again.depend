@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1583022197 source:c:\users\1000249643\desktop\programming langauages\algorithms and data structures udemy\assignments\week 2\[7] last_digit_of_the_sum_of_fibonacci_numbers_again\main.cpp
+	<iostream>
+	<vector>
+	<stdlib.h>
+
