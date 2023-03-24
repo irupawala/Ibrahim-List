@@ -1,0 +1,103 @@
+
+
+// TB for full system checking
+
+  assign mem[00000] = 32'd0; // 
+  assign mem[03996] = 32'd0; //
+  
+  assign mem[04000] = 32'b 100011_00000_00001_0000000000000001; // LW from memory 16 to reg 1 value 00f0f0f0
+  assign mem[04004] = 32'b 100011_00000_00010_0000000000000010; // LW from memory 8 to reg 2        000f0f0f
+  assign mem[04008] = 32'b 100011_00000_00011_0000000000000100; // lw from 4 to r3 
+  assign mem[04012] = 32'b 100011_00000_11110_0000000000001000; // lw r30 for jump from 16      value should be 4000
+ 
+  assign mem[04016] = 32'b 000000_00010_00001_00111_00000_100000; // ADD to r2+r1= r10
+  assign mem[04020] = 32'b 000000_00001_00010_01011_00000_100010; // sub to  r2-21=r11
+  assign mem[04024] = 32'b 000000_00001_00010_01100_00000_100110; // Xor to  r2^r1=r12 
+  assign mem[04028] = 32'b 000000_00001_00010_01101_00000_100100; // And to r2and r1=r13
+  assign mem[04032] = 32'b 000000_00001_00010_01110_00000_100101; // OR to r2 or r1 =r14
+  assign mem[04036] = 32'b 000000_00001_00010_01111_00000_100111; // NOR to r2 nor r1 =r15
+   
+  assign mem[04040] = 32'b 000000_00001_00010_01001_00000_101010; // SLT to r9 if $s < $t $d = 1; advance_pc (4); else $d = 0; advance_pc (4)
+
+  assign mem[04044] = 32'b 000000_00001_00010_01010_00010_000011; // SRA to r10 $d = $t >> h; advance_pc (4);
+  //branch  bne
+  assign mem[04048] = 32'b 000101_00001_00010_0000000000000011; //bne 4012   r1=!r2 offset 16 next add 4048+16
+  // branch delay slot
+  assign mem[04052] = 32'b 000000_00001_00010_01101_00000_100100; // And to r2and r1=r13
+  assign mem[04056] = 32'b 000000_00001_00010_01110_00000_100101; // OR to r2 or r1 =r14
+  assign mem[04060] = 32'b 000000_00001_00010_01111_00000_100111; // NOR to r2 nor r1 =r15
+  ///// new addr
+   // bne here
+  assign mem[04064] = 32'b 001000_00001_01010_0000111100001111; // ADDI to r10 0f0f
+  
+  assign mem[04068] = 32'b 001100_00001_01011_0000111100001111; // ANDI to r11
+  assign mem[04072] = 32'b 001101_00001_01100_0000111100001111; // ORI to r12
+  assign mem[04076] = 32'b 001110_00001_01101_0000111100001111; // XORI to r13
+  assign mem[04080] = 32'b 001010_00001_01110_0000111100001111; // SLTI to r14 
+  //34
+  assign mem[04084] = 32'b 001000_00001_01111_1111000011110000; // ADDI to r15 0f0f
+  assign mem[04088] = 32'b 001100_00001_10000_1111000011110000; // ANDI to r16
+  assign mem[04092] = 32'b 001101_00001_10001_1111000011110000; // ORI to r17
+  assign mem[04096] = 32'b 001110_00001_10010_1111000011110000; // XORI to r18
+  assign mem[04100] = 32'b 001010_00001_10011_1111000011110000; // SLTI to r19 
+  
+  //lw and add 
+    assign mem[04104] = 32'b 100011_00000_01000_0000000000001000; // LW from memory 8 to reg 8 value 0f0f0f0f
+	assign mem[04108] = 32'b 000000_00010_01000_10000_00000_100000; // ADD to r3 // stall due to lw and add 
+  //forwarding
+  assign mem[04112] = 32'b 000000_10000_00010_00110_00000_100100; // And to r6   forwarding from previous instruction 
+   
+  assign mem[04116] = 32'b 000000_00010_10000_00101_00000_100110; // Xor to r5 forwarding from memWb stage
+  
+  assign mem[04120] = 32'b 000000_00001_00010_00110_00000_100100; // And to r6
+  assign mem[04124] = 32'b 000000_00001_00010_00111_00000_100101; // OR to r7
+  //beq here branch will not be taken
+  assign mem[04128] = 32'b 000100_00001_00010_0000000000000100; // BEQ to r14 add 4012 
+  // branch delay slot
+  
+  assign mem[04132] = 32'b 000000_00001_00010_01101_00000_100100; // And to r2and r1=r13
+  assign mem[04136] = 32'b 000000_00001_00010_01110_00000_100101; // OR to r2 or r1 =r14
+  assign mem[04140] = 32'b 000000_00001_00010_01111_00000_100111; // NOR to r2 nor r1 =r15
+  
+  // jump to //Jump 0000 10ii iiii iiii iiii iiii iiii iiii //4200 = 0b1000001101000;
+  assign mem[04144] = 32'b 000010_00_0000_0000_0000_0100_0001_1010; //0b_0100_0001_1010 //00; // jump to 4400=00_00_0000_0000_0001_0001_0011_0000
+  // branch delay slot
+  assign mem[04148] = 32'b 000000_00001_00010_01101_00000_100100; // And to r2and r1=r13
+  assign mem[04152] = 32'b 000000_00001_00010_01110_00000_100101; // OR to r2 or r1 =r14
+  assign mem[04156] = 32'b 000000_00001_00010_01111_00000_100111; // NOR to r2 nor r1 =r15
+  
+ 
+  
+  //jr  here 
+   assign mem[04200] = 32'b 001100_00111_10000_0000111100001111; // ANDI to r16
+  assign mem[04204] = 32'b 001101_00111_10001_0000111100001111; // ORI to r17
+  assign mem[04208] = 32'b 001110_00111_10010_0000111100001111; // XORI to r18
+  assign mem[04212] = 32'b 001010_00111_10011_0000111100001111; // SLTI to r19 
+  
+  assign mem[04216] = 32'b 001000_00111_10100_1111000011110000; // ADDI to r20 0f0f
+  assign mem[04220] = 32'b 001100_00111_10101_1111000011110000; // ANDI to r21
+  assign mem[04224] = 32'b 001101_00111_10110_1111000011110000; // ORI to r22
+  assign mem[04228] = 32'b 001110_00111_10111_1111000011110000; // XORI to r23
+  assign mem[04232] = 32'b 001010_00111_11000_1111000011110000; // SLTI to r24 
+  
+  //sw
+  assign mem[04236] = 32'b 101011_00000_10000_0000000001000000; // sw to mem 64 value of reg16
+  assign mem[04240] = 32'b 101011_00000_10001_0000000001000001; // sw to mem 65 value of reg17
+  assign mem[04244] = 32'b 101011_00000_10010_0000000001000010; // sw to mem 66 value of reg18
+  assign mem[04248] = 32'b 101011_00000_10011_0000000001000011; // sw to mem 67 value of reg19
+  
+  assign mem[04252] = 32'b 101011_00000_10100_0000000001000100; // sw to mem 68 value of reg20
+  assign mem[04256] = 32'b 101011_00000_10101_0000000001000101; // sw to mem 69 value of reg21
+  assign mem[04260] = 32'b 101011_00000_10110_0000000001000110; // sw to mem 70 value of reg22
+  assign mem[04264] = 32'b 101011_00000_10111_0000000001000111; // sw to mem 71 value of reg23
+  
+  
+  assign mem[04268] = 32'b 000000_11110_000000000000000001000; // Jr to value stored in r30 i.e 4000 so this is infinite loop to verify system
+  // branch delay slot
+  assign mem[04272] = 32'b 000000_00001_00010_01101_00000_100100; // And to r2and r1=r13
+  assign mem[04276] = 32'b 000000_00001_00010_01110_00000_100101; // OR to r2 or r1 =r14
+  assign mem[04280] = 32'b 000000_00001_00010_01111_00000_100111; // NOR to r2 nor r1 =r15
+  
+  //0b1000001101000
+  
+////////////////////////////////////////////////////////////////////
