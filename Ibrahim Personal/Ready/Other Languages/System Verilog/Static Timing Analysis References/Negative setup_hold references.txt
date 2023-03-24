@@ -1,0 +1,9 @@
+https://vlsiuniverse.blogspot.com/2016/12/setup-hold-interview-questions.html
+https://forums.xilinx.com/t5/Timing-Analysis/Hold-time-can-be-negative-zero-and-positive-can-you-explain-it/td-p/101052
+http://www.narveer.com/blog/negative-setup-time-and-negative-hold-time-concept/
+
+
+
+https://forums.intel.com/s/question/0D50P00003yyOgwSAE/negative-hold-time?language=en_US
+https://www.quora.com/What-exactly-is-the-concept-of-negative-hold-time-in-digital-circuits
+

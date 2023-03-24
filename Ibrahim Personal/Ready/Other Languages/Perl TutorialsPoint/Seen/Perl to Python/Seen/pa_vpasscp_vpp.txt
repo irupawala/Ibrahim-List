@@ -1,0 +1,239 @@
+#########################################################################
+#GPIB interface for 4156C
+########################################################################
+
+
+# 1. Change the name of the Macro First within the script
+# 2. Set the path for the macro and script
+# 3. Change the $i, j, k according to the number of stages and frequency required
+# 4. Change the number's to be added, commented for the $i, j, k accordibgly at the end of the script
+# 5. Supply the Vcc from the Parametric analyzer by removing the jumper and coonecting the wire from the Parametric Analyzer. Note that
+#    Jumper provides connection of Vcc from the tester to the probe card while the Wire connection provides the connection from parametric 
+#	 analyzer to the probe pin. 
+# 6. ###########Make sure to turn on the parametric analyzer to supply vcc by pressing the single button on the parametric analyzer
+# 7. After all this set the path for the script and macro in the Command line
+# 8. check all the ctst, stst, rev bit = 0xe4 by running the macro with vcc provided from the tester, but note that if we will directly 
+#    script then the rev bits and rb_ are bound to fail as the supply is forced from the parametric analyzer and the single command in the script
+#    is not executed yet.
+# 9. Compile the script (Ctrl + f7), Run the same (f5)
+# 10. If the error occurs in the perl file stop the parametric analyzer manually pressing the stop button, because it will keep on running though 
+#     error in the perl file. 
+# 11. There is no need to Press Single and turn on the Vcc forcing again, if the error occurs as this is taken care of in the script
+# 12. Note that Vpp mode of Vpasscp can only be used for the 8 stage the reason behind this is because the Vpp
+# provides 12V and and the 8th stage only has the Vmax voltage greater than 12V, hence it makes no sense in 
+# using the Vpp mode before the 8th stage as Vout starts from the 12V and reaches the maximum of 18V(say, for 8th stage)
+# 13. Check the address of the gpib cable using the command gpibinit
+
+
+
+BEGIN {unshift(@INC, "." , ".." , "\\Micron\\Nextest\\perl_modules");}			# Sets the directory fo the file runcli and getHost
+
+
+use runcli;																		# Enable input from perl script as nextest cli command, Runcli is the command that you’ll use to communicate with the tester
+use getHost;                 													# To latch in module/ "library into current script, here the getHost.pm is loaded, used once on nextest system
+
+
+
+#open FILE,">","iv.txt" or die $!;												# Make file ready for reading from FILE
+
+
+$k=132;																			# Time period T = 38ns corresponds to data value of 140 
+#$i=0;
+while($k<156)
+{
+$i=3;
+while($i<4)
+{
+$logfile = "vpasscp8stg_SS_vppmode"."stg"."$i"."freq"."$k".".txt";				# Give the name to the logfile
+open(LOG,">$logfile") or die $!;												# Here LOG is the file handler and > is written to open the filename as the output file
+
+
+#******************* SUBS ****************************
+
+if($i==3)
+{
+
+runcli("gpibinit;");
+runcli("gpibsend(0x1,\":PAGE:CHAN:MODE SWEEP\")");								# PAGE, CHANnel, MODE, Set the mode to sweep
+
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU1:VNAME 'Vout'\")");						# Source Monitor Unit, voltage name Vout
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU1:INAME 'Iout'\")");						# current name Iout
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU1:MODE V\")");								# voltage output node
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU1:FUNCTION VAR1\")");						# function Variable
+
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU2:VNAME 'Vcc'\")");
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU2:INAME 'Icc'\")");
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU2:MODE V\")");
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU2:FUNCTION CONSTANT\")");					# function constant
+
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU3:VNAME 'Vpp'\")");
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU3:INAME 'Ipp'\")");
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU3:MODE V\")");
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU3:FUNCTION CONSTANT\")");
+
+#runcli("gpibsend(0x1,\":PAGE:CHAN:SMU3:DIS\")");
+
+runcli("gpibsend(0x1,\":PAGE:CHAN:SMU4:DIS\")");
+
+runcli("gpibsend(0x1,\":PAGE:CHAN:VSU1:DIS\")");								# Voltage Source Unit DISabled
+
+runcli("gpibsend(0x1,\":PAGE:CHAN:VSU2:DIS\")");
+
+runcli("gpibsend(0x1,\":PAGE:DISP:LIST:SELECT 'Vout'\")");						# DISPlay LIST
+runcli("gpibsend(0x1,\":PAGE:DISP:LIST:SELECT 'Iout'\")");
+runcli("gpibsend(0x1,\":PAGE:DISP:LIST:SELECT 'Vcc'\")");
+runcli("gpibsend(0x1,\":PAGE:DISP:LIST:SELECT 'Icc'\")");
+
+
+
+
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:MODE SINGLE\")");					# Single Stair Sweep
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:SPACING LINEAR\")");				# The sweep is incremented (decremented) by the
+																				# stepsize until the stop value is reached.
+
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:START 2.8\")");					# Setting the sweep range of Vout
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:STOP 18\")");
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:STEP 0.1\")");
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:COMPLIANCE 0.05\")");				# Compliance: meaning the stable state of voltage, on the parametric analyzer
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:PCOMPLIANCE:STATE 0\")");			# PCOMPLIANCE: Might be the state before the stable state
+
+runcli("gpibsend(0x1,\":PAGE:MEAS:DEL 2\")");									# Delay	
+runcli("gpibsend(0x1,\":PAGE:MEAS:HTIM 50\")");									# Hold Time
+
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:CONS:SMU2:SOURCE 3.3\")");				# Setting the values for VCC
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:CONS:SMU2:COMP 0.1\")");
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:CONS:SMU3:SOURCE 12\")");				# Setting the values for VPP
+runcli("gpibsend(0x1,\":PAGE:MEAS:SWEEP:CONS:SMU3:COMP 0.1\")");
+
+
+runcli("gpibsend(0x1,\":PAGE:SCON:SING\")");
+
+sleep(2);
+runcli("ctst");
+runcli("stst");
+sleep(2);
+runcli("pu;rs");
+runcli("B16R_vpasscp_vpp.txt()");
+runcli("regaccess(static_load,0x9,0x9,$k)");									# Using the Cregs 0x9 to modulate the frequency
+runcli("adputr(0xcf,0x03)");
+runcli("rs");
+poll_4156c();
+}
+
+
+
+
+sub poll_4156c{
+runcli("gpibsend(0x1,\":STAT:OPER:COND?\");");									# This command reads the value od operation status control register								# This command returns the present status of the Operation
+																				# Status "CONDITION" register. Reading this register does not clear it.
+runcli("gpibreceive(0x1);");													# Receive the value of register
+while((get_gpib_status() > 0)&&($foundError < 1) ){
+sleep(3);
+runcli("gpibsend(0x1,\":STAT:OPER:COND?\")");
+runcli("gpibreceive(0x1);");
+}
+
+}#end poll_4156c subroutine
+
+
+
+
+
+sub get_gpib_status{
+# get file info
+$host_meas = getHost(); 														# Retrieve the nextest station detail, will return something like mav2pt - 0014
+$file_meas = $host_meas."_temp.cli";											# Define the file_meas as the nextest cli temporary file, Contains all the text as displayed on Nextest CLI
+	open(STATUS, "$file_meas" ) || die("Can't open logfile: $!");
+	print "\nSTATUS received from GPIB:";	
+	while(<STATUS>)
+		{
+        if(/Error/){							#	Regular expression for matching the word
+        runcli("gpibinit;");    
+        $foundError = 1;
+        }
+        else
+        {
+            chomp;
+            s/\+/WTF/g;							# regex substitution, s/ stands for search and //g stands for replace
+            $value = $_;
+            $foundError = 0;
+        }
+    } # End of while(<INMEAS>) loop.
+	close(STATUS);
+print " $value";
+return($value);
+}#End of get_gpib_status subroutine.
+
+
+
+
+
+if($foundError <1){
+print LOG "\n";
+get_sweep_data2(Vout);
+print LOG "\n";
+
+get_sweep_data2(Iout);
+print LOG "\n";
+#function_file($logfile);
+get_sweep_data2(Vcc);
+print LOG "\n";
+#function_file($logfile);
+get_sweep_data2(Icc);
+}
+$i=$i+1;
+}
+$k=$k+8;
+}
+
+
+
+sub get_sweep_data2
+{
+$count=1;
+$temp = "$_[0]";
+$cli_file = getHost() . "_temp.cli";
+
+
+#~ print "\n sweep parameter $temp";
+
+runcli("gpibsend(0x1,\":FORM:BORD NORM\")");
+runcli("gpibsend(0x1,\":FORM:DATA ASC\")");
+runcli("gpibsend(0x1,\":TRAC? '$temp'\")");
+runcli("gpibreceive(0x1,,ex1)");
+
+open(IN,"<$cli_file") or die $!;
+
+	while(<IN>) {
+	if($count>=3)
+	{
+	$abg =$_;
+@abg=split(/\n/,$abg);
+print LOG "@abg";
+	}
+	$count=$count+1;
+	}
+	
+	close(IN);
+	 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,0 @@
-For the purpose of preparing report limited number of instructions have been added to the ICACHE.vp and there functionality has been displayed in the same
-, however if the reference to results of all the instructions asked in the assignment is required please replace the ICACHE.vp submitted in the rtl directory with
-the given substitute_ICACHE.vp provided in this directory and rename the same as ICACHE.vp

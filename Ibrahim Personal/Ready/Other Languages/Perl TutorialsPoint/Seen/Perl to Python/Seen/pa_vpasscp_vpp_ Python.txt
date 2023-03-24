@@ -1,0 +1,94 @@
+Seconds/Voltage# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun 20 14:23:51 2017
+
+@author: IRUPAWALA
+"""
+
+import logging
+import subprocess
+
+def do_commands(commands):
+    for command in commands:
+        subprocess.call("call_cli " + command)
+
+dflogpath = "I:\\Micron\\Nextest\\programs\\b16a\\scripts\\lawmiranda\\sources\\"
+        
+        
+k = 132
+#while (k < 156):
+    
+i = 3
+#    while (i < 4):
+              
+                                      
+LOG_FILENAME =  'vpasscp8stg_SS_vppmode.stg.'+`i`+'.freq.'+`k`+'.txt'
+logging.basicConfig(filename=LOG_FILENAME,level=logging.DEBUG)
+logging.debug('TG')
+           
+                       
+
+        
+ #   if i == 3:
+
+do_commands(['gpibinit;'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:MODE SWEEP\")'])
+
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU1:VNAME `Vout`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU1:INAME `Iout`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU1:MODE V\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU1:FUNCTION VAR1\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU2:VNAME `Vcc`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU2:INAME `Icc`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU2:MODE V\"'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU2:FUNCTION CONSTANT\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU3:VNAME `Vpp`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU3:INAME `Ipp`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU3:MODE V\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU3:FUNCTION CONSTANT\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:SMU4:DIS\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:VSU1:DIS\")'])
+do_commands(['gpibsend(0x1,\":PAGE:CHAN:VSU2:DIS\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:DISP:LIST:SELECT `Vout`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:DISP:LIST:SELECT `Iout`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:DISP:LIST:SELECT `Vcc`\")'])
+do_commands(['gpibsend(0x1,\":PAGE:DISP:LIST:SELECT `Icc`\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:MODE SINGLE\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:SPACING LINEAR\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:START 2.8\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:STOP 18\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:STEP 0.1\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:COMPLIANCE 0.05\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:VAR1:PCOMPLIANCE:STATE 0\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:DEL 2\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:HTIM 50\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:CONS:SMU2:SOURCE 3.3\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:CONS:SMU2:COMP 0.1\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:CONS:SMU3:SOURCE 12\")'])
+do_commands(['gpibsend(0x1,\":PAGE:MEAS:SWEEP:CONS:SMU3:COMP 0.1\")'])
+    
+do_commands(['gpibsend(0x1,\":PAGE:SCON:SING\")'])
+    
+time.sleep(2)
+do_commands(['ctst'])    
+do_commands(['stst'])
+time.sleep(2)
+do_commands(['pu;rs'])
+do_commands(['B16R_vpasscp_vpp.txt()'])
+do_commands(['regaccess(static_load,0x9,0x9,$k)'])
+do_commands(['adputr(0xcf,0x03)'])
+do_commands(['rs'])
+    
+
+
+#i=i+1
+
+#k=k+8    
