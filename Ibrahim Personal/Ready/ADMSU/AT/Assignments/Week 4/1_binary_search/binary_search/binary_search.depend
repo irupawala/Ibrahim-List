@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1583987102 source:c:\users\1000249643\desktop\programming langauages\algorithms and data structures udemy\assignments\week 3\7_maximum_salary\binary_search\main.cpp
-	<iostream>
-	<cassert>
-	<vector>
-

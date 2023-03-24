@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1585510209 source:c:\users\1000249643\desktop\programming langauages\algorithms and data structures udemy\assignments\week 4\3_improving_quicksort\improving_quick_sort\improving_quick_sort\main.cpp
-	<iostream>
-	<vector>
-	<cstdlib>
-
