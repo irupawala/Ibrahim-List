@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact name="[7.96] CarGame:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/_7_96__CarGame_jar</output-path>
+    <root id="root">
+      <element id="archive" name="[7.96] CarGame.jar">
+        <element id="module-output" name="[7.96] CarGame" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/libs/jline-3.12.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/jansi-1.18.jar" />
+    </root>
+  </artifact>
+</component>

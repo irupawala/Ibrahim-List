@@ -1,0 +1,4 @@
+https://www.slideshare.net/venkatamekala1/study-of-inter-and-intra-chip-variations
+https://www.paripath.com/blog/variation-blog/comparing-aocv-to-pocv
+https://www.edaboard.com/showthread.php?340295-Difference-between-POCV-and-AOCV-in-simple-words
+http://www.koreatest.or.kr/sub02/2014data/3.pdf
