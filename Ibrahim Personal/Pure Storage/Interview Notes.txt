@@ -1,9 +1,0 @@
-1st Round: Concurrency, Interviwer: Cassius Concepcion
-
-- CallBack Event Register Question. Everything went well. Provided a sub-optimal solution but the interviewer was expecting optimal solution. please refer to the Multithreading 
-callback code for details
-
-2nd Round: Data Strucures, Interviwer: Riley Thomasson
-
-- Buddy BitMap 2D. Asked Clearbits. Interviwer was expecting BFS Approach as it is good interms of spatial locality. I wrote a prepared DFS approach and he cleaned the code quite 
-a bit removing redundant operations. Refer to BitMap 2D array for solution

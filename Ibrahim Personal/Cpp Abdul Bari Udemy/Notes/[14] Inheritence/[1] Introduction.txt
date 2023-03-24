@@ -1,9 +1,0 @@
-- Inheritence is deriving the class from the existing pre-defined class.
-
-
-
-• It is a process of acquiring features of an existing class into a new class
-• It is used for achieving reusability
-• features of base class will be available in derived class
-
-Look in to examples to how are classed derived.
