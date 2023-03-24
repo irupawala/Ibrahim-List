@@ -1,3 +1,0 @@
-https://nandwiki.sandisk.com/pages/viewpage.action?pageId=158346123
-https://nandwiki.sandisk.com/display/EPIC/FTL+Firmware+Documentation+Guide#FTLFirmwareDocumentationGuide-Odyssey(SAS&NVMe,1ZNAND)
-https://www.simms.co.uk/tech-talk/sas-sata-or-pcie-know-your-interface/
