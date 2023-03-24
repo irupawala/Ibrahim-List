@@ -1,0 +1,4 @@
+https://www.geeksforgeeks.org/hashing-set-3-open-addressing/?ref=lbp
+https://www.youtube.com/watch?v=_xA8UvfOGgU&t=35s
+https://wdc.udemy.com/course/datastructurescncpp/learn/lecture/13193408#overview
+https://www.youtube.com/watch?v=zYDuTwovL1k
