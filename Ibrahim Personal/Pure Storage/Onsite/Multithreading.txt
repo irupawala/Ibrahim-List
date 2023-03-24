@@ -1,0 +1,62 @@
+Multithreading Questions
+
+1. Multithreading, given a base class Worker, write a class MultiWorker, and see the posted code:
+
+https://pastebin.com/Lek0dm8A
+https://www.1point3acres.com/bbs/thread-891727-1-1.html
+https://www.1point3acres.com/bbs/thread-549336-1-1.html
+https://www.1point3acres.com/bbs/thread-299273-1-1.html
+https://www.1point3acres.com/bbs/thread-478564-1-1.html
+https://www.1point3acres.com/bbs/thread-304921-1-1.html
+https://www.1point3acres.com/bbs/thread-302690-1-1.html
+https://www.1point3acres.com/bbs/thread-297743-1-1.html
+https://www.1point3acres.com/bbs/thread-224257-1-1.html
+
+2. Multithreading reg_cb and event fire
+
+https://1o24bbs.com/t/topic/17444
+https://www.evernote.com/shard/s208/client/snv?noteGuid=b8ec12ed-d674-4383-b940-edaf6b38e770&noteKey=8212334e9e930f029ee5f2c62abb7b58&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs208%2Fsh%2Fb8ec12ed-d674-4383-b940-edaf6b38e770%2F8212334e9e930f029ee5f2c62abb7b58&title=PureStorage%2BMultithread%2BPhone%2BQuestion%2Bcopy
+https://www.1point3acres.com/bbs/thread-189212-1-1.html
+https://www.1point3acres.com/bbs/thread-293674-1-1.html
+https://github.com/xieqilu/Qilu-leetcode/blob/master/PureStorage/TriggerSystem.cs
+https://www.1point3acres.com/bbs/thread-298004-1-1.html
+
+3. Multithreading The user will randomly call int get_call_id()
+get_unique_ids() to implement get_one_id()
+
+No reference available. Study producer-consumer problem, Latency, Throughput
+
+https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=741906&ctid=232343
+https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=837048&ctid=234332
+
+https://www.1point3acres.com/bbs/thread-124049-1-1.html
+https://1o24bbs.com/t/topic/1468/3
+
+4. Polymorphism check
+
+https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=917455&ctid=234332
+https://www.1point3acres.com/bbs/thread-117854-1-1.html
+
+
+Thread Safe Queue: Blocking and Non-Blocking
+
+https://leetcode.com/problems/print-foobar-alternately/
+
+What is thread safe ?
+
+Event Fire 
+Register Callbacks
+Mutex
+locks
+Semaphore
+Callbacks
+Single Thread
+Multi Thread
+Lock Free
+Implement a Compiler
+LRU Cache
+Race Condition Example
+DeadLock Example
+
+https://1o24bbs.com/t/topic/1468
+https://1o24bbs.com/t/topic/11294

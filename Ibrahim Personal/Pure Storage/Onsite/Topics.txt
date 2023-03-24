@@ -1,0 +1,73 @@
+Data Structures and Algorithms:
+
+Valid Square: https://leetcode.com/problems/valid-square/
+Detect Square: https://leetcode.com/problems/detect-squares/
+Happy Numbers: https://leetcode.com/problems/happy-number/
+Skyline Problem: https://leetcode.com/problems/the-skyline-problem/description/
+Sort Colors: https://leetcode.com/problems/sort-colors/
+Coin Change: https://leetcode.com/problems/coin-change/
+Fibonacci Recursive and Iterative - https://leetcode.com/problems/fibonacci-number/
+BitMap ClearBits SetBits 1D and 2D - Refer Notes
+Draw a Circle: Refer Notes, https://www.youtube.com/watch?v=1Te8U_JR8SI
+Valid Parantheses Stack: https://leetcode.com/problems/valid-parentheses/submissions/
+Image Smoother: https://leetcode.com/problems/image-smoother/
+Least Common Ancestor of a BST: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+Least Common Ancestor of a Binary Tree: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+
+Design:
+
+LRU Cache: https://leetcode.com/problems/lru-cache/
+Implement an O(1) Data Strucure: https://leetcode.com/problems/insert-delete-getrandom-o1/
+SkipList: https://leetcode.com/problems/design-skiplist/
+Serialize and Deserialize Binary Tree: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+
+
+The file contains a very long string. Reverse the string which is too big in the size to fit into the RAM and DISK.
+
+
+Concepts:
+1. Virtual Function
+- Refer Abdul Bari Notes
+- https://en.wikipedia.org/wiki/Virtual_function
+
+2. Virtual Method Table 
+- https://en.wikipedia.org/wiki/Virtual_method_table
+- https://www.youtube.com/watch?v=NCKBIi8vfM4
+- https://blog.csdn.net/haoel/article/details/1948051
+- https://blog.csdn.net/haoel/article/details/3081328
+- https://blog.csdn.net/haoel/article/details/3081385
+
+3. Polymorphism
+- Refer Abdul Bari Notes
+
+4. Pointers
+- Refer Abdul Bari Notes
+
+5. Typedef
+- https://stackoverflow.com/questions/4295432/typedef-function-pointer
+
+https://jobs.1point3acres.com/companies/purestorage/interview
+
+Software Design
+
+- Red Black Trees
+- Skip List
+- Treap
+
+
+
+1. Sliding Window
+2. Two Pointers
+3. Topological Sort
+4. Merge Intervals
+5. LinkedList
+6. Fast and Slow Pointers
+7. BFS
+8. DFS
+9. Two Heaps
+10. Top K elements
+11. K-way merge
+12. Binary Search
+13. XOR
+14. Subsets
+15. 
