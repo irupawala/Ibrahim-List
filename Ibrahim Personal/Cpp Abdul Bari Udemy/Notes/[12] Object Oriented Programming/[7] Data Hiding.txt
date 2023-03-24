@@ -1,0 +1,129 @@
+class Rectangle
+{
+    public:
+    int length;
+    int breadth;
+    int area()
+    {
+        return length*breadth;
+    }
+    int perimeter()
+    {
+        return 2*(length+breadth);
+    }
+};
+
+
+- Note that in this class we have made the data as public.
+- This is a problem if the users mishandles the data.
+- What if user gives lenght as -ve then the area will be -ve.
+- This is called Data Mishandling and hence data hiding becomes crucial.
+- hence we have to make the data as PRIVATE. Also note that by default it is private even if you don't mention anything.
+
+Consider this:
+
+class Rectangle
+{
+    private:
+    int length;
+    int breadth;
+	
+	public:
+    int area()
+    {
+        return length*breadth;
+    }
+    int perimeter()
+    {
+        return 2*(length+breadth);
+    }
+};
+ 
+But now we can not write and even read the variables like this:
+
+r.length = 10;
+cout<<r.length;
+
+- Hence now we have to write functions to read and write data as
+functions are public
+
+e.g.
+
+class Rectangle
+{
+    private:
+    int length;
+    int breadth;
+	
+	public:
+	
+	void setLength(int l)
+	{
+	length = l;
+	}
+	
+	void setBreadth(int b)
+	{
+	breadth = b;
+	}
+	
+	int getLength()
+	{
+	if(l>=0)
+		length=l;
+	else
+		cout << "length cannot be -ve, default =0";
+		length=0; // Making default length to 0
+	return length;
+	}
+	
+	int getBreadth()
+	{
+	if(l>=0)
+		breadth=l;
+	else
+		cout << "breadth cannot be -ve, default =0";
+		breadth=0; // Making default length to 0
+	return length;
+	}
+	
+	
+    int area()
+    {
+        return length*breadth;
+    }
+	
+    int perimeter()
+    {
+        return 2*(length+breadth);
+    }
+};
+
+- Hence Now we have to call these functions to set length and breadth
+
+void main()
+{
+
+rectangle r;
+r.setLength(10);
+r.setBreadth(-5);
+cout<<r.area(); // hence now the area will be 0
+
+cout << "length is" << r.getLength();
+
+********************************************************
+
+*** PROPERTY FUNCTIONS:
+
+- getXXX functions reads the value
+- setXXX functions writes the value
+
+- getXXX are called Accessors.
+- setXXX are called Mutators.
+
+
+**********************************************************
+
+- Also notice that the area and perimeter provides some failities to the user hence
+they are called FACILITATORS.
+

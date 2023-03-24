@@ -1,0 +1,58 @@
+Shallow Constructors are the ones which only copy the values. In Contrast Deep Copy contructors are the 
+constructors which not only copies the values but also allocates the same memory.
+
+Consider the exmaple below
+
+#include <iostream>
+
+using namespace std;
+
+
+class Test
+{
+    int a;
+    int *p;
+
+    Test (int x)
+    {
+        a = x;
+        p = new int[a];
+    }
+
+    Test (Test &t)
+    {
+        a = t.a;
+        p = t.p;
+
+    }
+
+};
+
+int main()
+{
+    
+    Test t(5);
+    Test t2(t); 
+    return 0;
+}
+
+Over here the copy contructor will create a variable a = 5 just like original constructor however the pointer
+created by this copy contructor will also point to the same array of size 5 which was created by the original constructor.
+
+This is completely wrong and hence DEEP COPY CONTRUCTORS are used which takes care of such issues. Meaning the 
+copy constructor will create a new array in the heap and its pointer will point to that new array.
+
+For this we have to write code to create new array in the heap in the copy contructor 
+
+Test (Test &t)
+{
+	a = t.a;
+	p = new int[a]; // now this will point to a new array created in heap
+	}
+	
+	
+** If you are careful about these things then your constructor is a deep copy constructor.
+
+
+
+

@@ -1,0 +1,80 @@
+- Insertion operator is cin and extraction operator is cout. We can also overload these operators
+
+- C++ know how to display int, chars and floats. But it doesn't know how to display user defined objects
+like complex objects. Hence we have to write a function for that.
+
+class complex{
+
+private:
+
+int real;
+int img;
+
+public:
+
+void display()
+{
+
+cout << real << "+i" << img;
+}
+
+main()
+{
+complex c1(3,7);
+
+c1. display(); // This will diplay the complex number 3+i7
+}
+
+
+- But we don't want to use display function like this but use it excatly like int, float, etc.
+
+cout << c1;
+
+// hence now we have to overload the insertion operator the same way we have overloaded + opertor 
+
+// Hence now we will write the display function something like this
+
+ friend ostream & operator<< (ostream &o, complex &c1)
+ 
+ // friend because it is taking two arguments
+ // cout << c1, insertion operator << takes in two arguments cout (which is ostream) and c1
+ // here cout is an argument and not class itself like c1.operator+(c2). also when we write C3 = C1 + C2 then
+ // both the C1 and C2 are arguments and + is operator in the same way cout and c1 are arguments
+ // here after displaying we want to return back cout so that it can be used in the same line
+{
+
+o << real << "+i" << img;
+}
+
+* Writing the complete program again
+
+
+
+class complex{
+private:
+
+int real;
+int img;
+
+public:
+
+ friend ostream & operator<< (ostream &o, complex &c1);
+};
+
+
+ ostream & operator<< (ostream &o, complex &c1)
+{
+o << c1.real << "+i" << c1.img;
+}
+
+
+
+main()
+{
+complex c1(3,7);
+
+cout << c1
+}
+
+
+

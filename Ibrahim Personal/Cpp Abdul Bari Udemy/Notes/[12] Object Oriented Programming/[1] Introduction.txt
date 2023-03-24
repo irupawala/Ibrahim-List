@@ -1,0 +1,6 @@
+What are objects ?
+
+- Lets say government has different departments like banks, electricity, water, transportation, etc.
+- Now each departments like banks may have its own functions like open accout, check balance, deposit, etc
+- These individual departments are known as OBJECTS.
+- These objects contains functions as well as data related to that functions.

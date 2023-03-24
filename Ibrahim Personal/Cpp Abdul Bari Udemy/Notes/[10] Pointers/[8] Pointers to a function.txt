@@ -1,0 +1,48 @@
+- Consider this function
+
+void display()
+{
+	cout << "Hello";
+	}
+	
+int main()
+	{
+	display(); // this will simply call the function display
+	// Instead of directly calling it by name call it using the pointer to a function
+	
+	void (*fp) (); declaration syntax is (return type)(name of the pointer, fp is function pointer) (parameters)
+	// pointer to a function (fp) must be inside the bracket or else it won't be a function.
+	
+	fp = display; // this will assign the address of the function to this pointer. This is Initialization of a pointer
+	
+	// Call a function this way using pointer
+	(*fp)(); // function call
+	
+	}
+	
+
+* Example:
+
+int max(int x, int y)
+	{
+		return x>y?x:y;
+		}
+		
+int min(int x, int y)
+	{
+		return x<y?x:y;
+		}
+		
+int main()
+{
+	int(*fp)(int, int); // Declaration 
+	fp=max; // Initialization
+	(*fp)(10,5); // function call
+	fp=min; // Now the same pointer is initialized to min function
+	(*fp)(10,5); // now min function is called using the same name or function call. This is called as polymorphism.
+	}
+	
+*** In function overriding internally function pointers are used for achieving runtime polymorphism 
+*** function pointer can point to any function having same signature.
+
+	

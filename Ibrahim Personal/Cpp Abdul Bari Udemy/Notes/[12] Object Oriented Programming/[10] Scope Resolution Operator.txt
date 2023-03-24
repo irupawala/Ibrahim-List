@@ -1,0 +1,49 @@
+There are two methods of writing functions inside the class. These functions are called member functions.
+
+class rectangle
+{
+
+private:
+
+int length;
+int breadth;
+
+public:
+
+int area() // This is one way of writing the function inside the class
+
+{
+return length*breadth;
+}
+
+int perimeter(); // This is another way where you just write the function name inside the class
+
+};
+
+
+int rectangle:: perimeter() // return type nameoftheclass :: nameOfFunction
+{
+return 2*(length+breadth);
+}
+
+
+void main()
+{
+
+rectangle r(10,5);
+cout << r.area();
+cout<<r.perimeter();
+}
+
+*** DIFFERNCE BETWEEN TWO METHODS OF WRITING MEMBERS FUNCTIONS
+
+* When the function is written inside the class then in the machine code that function is created inside 
+the main function where it is called. Such kind of functions are called as INLINE Functions. Eg. area() function above.
+
+* When the function is written outside the class like the perimeter function here using 
+the SCOPE RESOLUTION OPERATOR then the machine code for the function will be SEPARATELY GENERATED.
+When these functions are called in the main function then it will go to these functions and return to main
+after the functions has been executed.
+
+** IT IS A GOOD PRACTICE IN C++ TO WRITE THE FUNCTION OUTSIDE THE CLASS
+

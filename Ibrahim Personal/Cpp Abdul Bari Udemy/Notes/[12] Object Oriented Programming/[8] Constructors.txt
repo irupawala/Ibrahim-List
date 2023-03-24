@@ -1,0 +1,106 @@
+
+int main()
+{
+
+rectangle r;
+r.setLength(10);
+r.setBreadth(-5);
+cout<<r.area() << endl; // hence now the area will be 0
+
+cout << "length is " << r.getLength() << endl;
+
+    return 0;
+}
+
+- Notice that we have set the length and breadth of the rectangle using 
+mutators and accessors but philosophically this is wrong.
+
+- Consider that if you purchase a car then you should be able to order a car
+with some default color. In the same way when you create an object then you should be 
+able to set properties of the object while creating it only using some statement like 
+this: rectangle r (length, breadth).
+
+- This is done with the help of constructors.
+
+- Now when we declare an object 
+
+rectangle r;
+
+// Then the object is created in stack. Who created this object ?. Some function created this object. 
+This function is provided by the compiler not visible to the user but present in the machine code. and
+this constructor will create an object. Hence EVERY CLASS WILL HAVE SOME CONTRUCTOR. This is called
+as Default Constructor.
+
+User can also write their own constructor. If we don't write any
+compiler will provide its default constructor.
+
+1. Default Constructor - Also called buit-in constructor
+2. Non-Parameterized Constructor - This is also called default sometime
+3. Parameterized Constructor
+4. Copy Constructor
+
+
+
+class rectangle
+{
+    private:
+    int length;
+    int breadth;
+	
+	public:
+	
+	rectangle() // Non-Parameterized
+	{
+	length=0;
+	breadth=0;
+	}
+	
+	rectangle(int l, int b); // Parameterized
+	{
+	setLength(l);
+	setBreadth(b);
+	}
+	
+	rectangle(rectangle &rect) // COPY CONSTRUCTOR same name as class should be given
+	{
+	
+	length= rect.length;
+	breadth= rect.breadth;
+	}
+	
+};
+
+
+Now all of these can be called as below in MAIN()
+
+rectangle r; // built-in
+rectangle r(); // non-parameterized
+rectangle r(10,5); // parameterized
+rectangle r2(r); // copy contructor
+
+** Note that all the constructor have same name but different parameters. 
+Hence this is nothing but CONSTRUCTOR OVER-LOADING.
+
+* Hence we can avoid the non - parameterized constructor by giving default arguments to parameterized constructor
+
+	rectangle() // Non-Parameterized
+	{
+	length=0;
+	breadth=0;
+	}
+	
+	rectangle(int l, int b); // Parameterized
+	{
+	setLength(l);
+	setBreadth(b);
+	}
+	
+- IS EQUIVALNENT TO:
+
+	rectangle(int l=0, int b=0); // Parameterized
+	{
+	setLength(l);
+	setBreadth(b);
+	}
+	
+

@@ -1,0 +1,7 @@
+- When you open a text file in any program like notepad then the program first converts the binary 
+numbers to ASCII codes and then displays the characters on screen
+
+- To read the binary file in C++ you haveto use the mode ios::binary.
+Also there are different functions like read() and write().
+
+- Binary files are faster and takes less space then the text file

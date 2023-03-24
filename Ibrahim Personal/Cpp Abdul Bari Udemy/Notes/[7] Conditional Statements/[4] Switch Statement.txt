@@ -1,0 +1,36 @@
+- switch is a branch and control statement.
+- switch is faster then if-else because unlike if-else it doesn't check all the conditions
+- switch(exp) --> note that this exp can be char or int
+- note that in the statement case 1: there is a space between case and 1. It will generate wrong results if you don't give this space
+
+
+switch(exp)
+{
+case 1:
+---
+break;
+
+case 2:
+---
+break;
+
+default:
+---
+}
+
+- default is optional. it won't throw an error if you don't include default. 
+- If you give any value in the expression for which there is no case then the default will be executed.
+- default can also be written anywhere in the program but if not in end then the break statement has to be included with it.
+- Every case block must terminate with break. 
+- If you don't mention break after any case then it will execute that case and the case after that untill the break statement is reached.
+This is called fall through in programming.
+- If int tyoe then cases can be 0,1,2.... If the char type then we have char labels like 'a', 'b', 'c'..... but cases names cannot be STRINGS.
+
+
+* Nested Switch:
+
+- switch statment inside a switch statment.
+
+- Switch is used for menu-driven programs like file option in notepad will have New, Save, Saveas, etc
+
+

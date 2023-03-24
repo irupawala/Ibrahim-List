@@ -1,0 +1,82 @@
+- Lambda expressions are used for defining unnamed functions.
+- As Lambda expressions are unnamed functions they are also used as a function within another function
+and hence are used as nested function
+- Syntax is as follows:
+
+[capture_list](parameter_list)->return type{body};
+
+e.g: 1  program to write unnamed function to display hello on screen
+
+main()
+{
+[](){cout<<"Hello";}(); // The () in the end is for calling this function
+
+}
+
+e.g: 2
+
+[](int x, int y){cout << "Sum: " << x+y;}(10,5);
+
+e.g: 3
+
+int x = [](int x, int y){return x+y;} (10, 5); // WE ARE NOT WRITING RETURN TYPE AS C++ HAS AUTO 
+// RETURN TYPE BY DEFAULT.
+
+e.g: 4
+
+auto f = [](){cout << "Hello";};
+// function assigned to variable or reference or pointer to a function f
+// now we can call the function like this :
+
+f();
+
+e.g: 5 // return type mentioned
+
+main()
+{
+
+int s=[](int x, int y) -> int{return x+y;}(10, 5);
+
+e.g: 6 
+
+// One can access the local variable of the function inside the named function
+
+main()
+{
+
+int a = 10;
+int b = 5;
+[a, b] () {cout << a << " " << b;}(); // notice a and b in capture list
+
+[a, b] () {cout << ++a << " " << ++b;}(); // This cannot be done as captured variables cannot be modified.
+
+[&a, &b] () {cout << ++a << " " << ++b;}(); // By creating a reference now we can modify the values
+
+
+e.g: 7 
+
+template <typename T>
+void fun (T p)
+{
+    cout << "Value returned from a function" << endl;
+    p();
+}
+
+main()
+{
+    // Unnamed function can also be passed to other function as an argument
+
+    int k=10;
+    auto fk = [&k](){cout << ++k << endl;}; // 
+    fun(fk);
+    fun(fk);
+    fun(fk);
+	
+	return 0;
+	}
+	
+
+
+
+
+

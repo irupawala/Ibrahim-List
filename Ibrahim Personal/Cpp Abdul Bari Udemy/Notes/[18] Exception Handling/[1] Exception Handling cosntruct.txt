@@ -1,0 +1,50 @@
+There are three types of errors which can occur in the programming:
+
+1. Syntax Error - Compiler can resolve it, programmer is responsible
+2. Logical Error - Debugger can help with it, programmer is responsible
+3. Runtime Error - Programmers can help giving a warning, user is responsible
+
+There are some cause of error during runtime.
+
+1. Bad Input:- eg integer needed but string given
+2. Lack of resources:- lack of files, printer, lack of ink, etc
+
+Runtime error is called as Exception. Programmer must give warnings to the user for not facing runtime error.
+e.g if there is low fuel in a car or air pressure, warning will be given.
+
+
+C++ Compiler does not have capability to throw the exception like java. Hence programmer has to throw the error themselves
+
+// Note here that for throw int in this code, value of int does not have meaning but it can be used to show error
+code to the user informing the user which type of error it is.
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x=10, z;
+    //int y=2, // Try changing the value of y and executing the program again to see the difference
+    int y=0;
+
+    try
+    {
+        if (y==0)
+            throw 1; // Note that this is like if else statement if condition is met int will be thrown
+        z = x/y;
+        cout << z << endl;
+    }
+
+    catch (int e) // here we have written int because we are throwing an integer
+    {
+        cout << "Division by zero " << e << endl;
+    }
+
+    cout << "Program Ended" << endl; // This will always be executed
+
+    return 0;
+}

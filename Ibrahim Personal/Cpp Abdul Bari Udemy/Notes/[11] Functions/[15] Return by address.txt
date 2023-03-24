@@ -1,0 +1,33 @@
+- Function can also return addresses.
+
+int * fun(int size) // return type is pointer of type integer
+
+{
+int *p = new int[size];  // creates a new array in the heap. pointer gets the address of the array.
+
+for (int i=0; i<size; i++)
+	p[i] = i++; // fill the elements with i+1
+
+return p;
+
+}// This function creates array in the heap. fills the elements in the array and then returning the address of the pointer.
+
+
+main()
+{
+int *ptr=fun(5); // This is allowed only because the function is not deleting the memory in heap.
+for(int i=0; i<5; i++)
+	cout << ptr[i] << endl;
+} // the pointer of the main function ptr is now pointing at the address of the array.
+
+
+
+** ADDRESS OF THE LOCAL VARIABLE CANNOT BE RETURNED BACAUSE ONCE THE FUNCTION ENDS VARIABLES ARE DEALLOCATED FROM THE MEMORY
+int * fun()
+
+{
+	int x=10;
+	return &x;	//Will get warning Address of stack memory associated with local variable 'x' returned
+	}
+
+** ADDRESSES OF THE HEAP MEMORY CAN ONLY BE RETURNED

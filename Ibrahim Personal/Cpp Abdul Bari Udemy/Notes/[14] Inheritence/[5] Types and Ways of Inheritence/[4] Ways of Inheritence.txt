@@ -1,0 +1,78 @@
+* Ways of inheritance
+
+A class can be inherited in flowing ways :
+
+Publicly - All members of base will have same accessibility in derived class except private
+Protectedly - All members of base will become protected in derived class 
+Privately - All members of base will become private in derived class
+
+* Note :
+
+Public Inheritence: 
+
+ - Public and protected members of the base class will become public for the child.
+ - Child will be able to access public and protected of the Base.
+ - Grandchild will be able to access public and protected of the child.
+ - Object will only be able to access public and not protected of the child.
+ 
+Protected Inheritence:
+
+ - Public and protected members of the base class will become protected for the child.
+ - Child will be able to access public and protected of the Base.
+ - Grandchild will be able to access public and protected of the Child.
+ - Object will NOT be able to access public as well as protected of the child.
+ 
+Private Inheritence:
+
+ - Public and protected members of the base class will become private for the child.
+ - Child will be able to access public and protected of the Base.
+ - Grandchild will NOT be able to access public as well as protected of the child.
+ - Object will NOT be able to access public as well as protected of the child.
+ 
+ 
+ 
+classParent
+{
+private: inta;
+protected: intb;
+public: intc;
+voidfunParent()
+{
+a=10;
+b=5;
+c=15;
+}
+};
+classChild: private Parent
+{
+private:
+protected:
+public:
+voidfunChild()
+{
+//a=10;
+b=5;
+c=15;
+}
+};
+
+classGrandChild : public Child
+{
+public:
+voidfunGrandChild()
+	{
+	//a=10;
+	//b=5;
+	//c=20;
+	}
+};
+
+intmain()
+{
+	// Child c;
+	//c.a=10;
+	//c.b=5;
+	//c.c=20;
+}
+  
+

@@ -1,0 +1,26 @@
+- Class is deterined by Classification. Class share specific common properties.
+- Eg. Car is class. Camry, Civic are the objects.
+- Class is a definiation. Object is an instance.
+- Design of a room (blueprint) is a class and the actual rooms made 
+with the help of that class are objects.
+- Design of a chip is class while actual chips made out of it are objects.
+
+- Class in programming consists of two things data and fuctions.
+- Data is called as properties and function is called behavior
+
+e.g.
+
+Class Rectangle
+{
+
+	float lenght; // data
+	float breadth; // data
+	
+	float area(); // function
+	float perimeter(); // function
+	float diagonal(); // function
+	};
+	
+Now objects of the classes are say r1, r2, r3, etc
+
+- These objects will have all the functions like area

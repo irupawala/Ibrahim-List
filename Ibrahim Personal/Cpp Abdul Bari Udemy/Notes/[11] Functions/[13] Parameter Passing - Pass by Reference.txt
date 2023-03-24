@@ -1,0 +1,38 @@
+3. Pass by Reference // ONLY AVAILABLE WITH C++
+
+int swap (int &a, int &b) // formal parameters // NOTICE THE &
+{
+int temp;
+temp = a;
+a = b;
+b = temp;
+}
+
+
+int main()
+{
+int x =10, y=20; // actual parameters
+swap(x,y);
+cout << x << " " << y;
+}
+
+- But we have studies that reference are nothing but the aliases. hence x=a and y=b
+- But then how it is possible that the function swap can directly access the variables of main. We have studied that it is not possible.
+- Answer is when the machine code is generated then in the machine code of main function swap function is copied.
+*** Call by reference thus will NOT CREATE SEPARATE PIECE OF MACHINE CODE like call by value and call by address.
+*** machine code will not have two different pieces of modules or functions.
+- swap here is not a separate function but the part of main function only. 
+- Same part of main function is calling x as a and y as b. 
+- HENCE THERE IS NO ACTIVATION RECORD CREATED. HENCE THE FUNCTION IS NOT CALLED IN THBE MACHINE CODE. We just wrote it separate in the source code.
+
+- Also temp is created temporarily in the activation record of main only untill the swap code is executed.
+
+* INLINE FUNCTION:
+
+- When the piece of the machine code of the function is copied at the place of function call then such functions 
+are called as INLINE FUNCTIONS.
+
+* ALWAYS USE CALL BY REFERENCE FOR SIMPLE FUNCTIONS OR ELSE THE COMPILER WILL AUTOMATICALLY CHANGE IT TO CALL 
+BY VALUE.
+
+- e.g. if we write a for loop inside the function it will be changed to CALL by VALUE

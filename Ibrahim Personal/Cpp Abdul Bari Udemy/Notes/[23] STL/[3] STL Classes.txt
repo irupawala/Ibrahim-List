@@ -1,0 +1,72 @@
+STL have:
+
+1. Algorithms
+2. Containers
+3. Iterators
+
+- Built-in Algorithms are there to manage containers
+- Arrays linkedlist stack queue are containers. Containers contains collection of data.
+- Iterators are used for iterating over collection of value.
+
+
+- some built-in algorithms are: 
+- search(), sort(), reverse(), binary_search(), concat(), copy(), union(), intersection(), merge(), heap()
+
+
+1. Vector:
+
+- Self-managed array. Dynamically manages the size of array.
+- This can grow and reduce itself. If we create bigger array it will dynamically copy the array into
+bigger size array and also it will copy to the smaller size array if we reduce the size.
+- functions available are as follows: push_back(), pop_back(), insert(), remove(), size(), empty().
+
+2. List:
+
+- This is for Doubly linkedlist. It has a pointer for next node and previous node.
+- It is a template class. It can have any objects like int, float, string, your own object, etc.
+- It has all the functions of vector but also it has push_front(), push_back(), front(), back()
+
+3. Forward_List:
+
+- This is a singly linkedlist.
+- If we know that we are going to access only in forward direction then avoid doubly as it takes more space
+- same functions as lists.
+
+4. Deque:
+
+- Same as vector but double ended queue hence you can insert and delete from both the ends
+- same set of function as list and forward_list
+- In vector you cannot add/ delete elements from front side
+
+5. priority_queue:
+
+- For max heap data structures.
+- In priority_queue always the largest element of the queue.
+- When you insert how it are arranged that is not the concern of the programmer. But the arrangment 
+of the elements will not be in order.
+- Has the function like push(), pop(), empty(), size().
+
+6. Stack:
+
+- same as LIFO.
+- same functions as priority_queue
+
+7. Set:
+
+- will only have unique elements.
+- Order of the elemets will not be maintained.
+- This is a unique set of values and values cannot be modified but only displayed
+
+8. Multiset:
+
+- Same as set but allows duplicate
+
+9. Map: 
+
+- Allowed for storing key: value pair
+- Uses hash table
+- uses unique key
+
+10. MultiMap:
+
+- Multiple keys are allowed but same key value pairs are not allowed.

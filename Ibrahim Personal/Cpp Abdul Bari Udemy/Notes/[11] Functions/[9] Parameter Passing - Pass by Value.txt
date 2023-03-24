@@ -1,0 +1,34 @@
+* What are the methods by which function can take parameters ?.
+
+1. Pass by value
+2. Pass by address
+3. Pass by reference // not available in C language
+
+***NOTE THAT IT IS POSSIBLE THAT IN THE SAME FUNCTION ONE VALUE IS CALLED BY VALUE , OTHER BY CALL BY ADDRESS AND 
+OTHER BY CALL BY REFERENCE
+
+1. Pass by value
+
+int swap (int a, int b) // formal parameters
+{
+int temp;
+temp = a;
+a = b;
+b = temp;
+}
+
+
+int main()
+{
+int x =10, y=20; // actual parameters
+swap(x,y);
+cout << x << " " << y;
+}
+
+- The function swap and all the variables a and b gets deleted once the function is completed
+
+- Here the value of x and y will still be the same but a and b will get swapped. 
+- Hence call by value method cannot modify the actual parameters by the change in formal parameters.
+- Call by value is used when you have the function which works on the parameters and RETURN the result.
+- In our example the swap function is not returning anything hence call by value cannot be used for the
+operations like swap.

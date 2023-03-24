@@ -1,0 +1,22 @@
+2. Pass by address:
+
+int swap (int *a, int *b) // formal parameters are pointers
+{
+int temp;
+temp = *a; // pointer dereferencing 
+*a = *b; // actual data is accessed and the values are swapped.
+*b = temp;
+}
+
+
+int main()
+{
+int x =10, y=20; // actual parameters are address of variables
+swap(&x,&y); // addresses are sent instead of values
+cout << x << " " << y;
+}
+
+// Hence accessing variables of one function through another function is not possible but it is made possible
+// through the use of pointers
+
+- Pointers thus gives the power to the function to access the parameters of the calling function

@@ -1,0 +1,22 @@
+- Standard Template Language
+- For Storing collection of values we need data structures
+- Data Structures are Collection or arrangement of data for its efficient utilization.
+- Depending on the utilization one can arrange the data so that it can be utilized efficiently.
+- Efficiency in terms of time and space.
+
+- Let us say we have collection of marks of data and we want to do all the operations on them.
+- So we can use a built-in data structure like array. Array is collection of similar data structures.
+- Now we can find average, mean, max, min, etc
+
+
+- let us say we have array of 10 elements now we cannot add 11th element.
+- Hence we have to know the size of the array beforehand.
+- Also if we define array of 100 elements but use only 10 elements then it is waste of memory.
+- THESE ARE COMMON PROBLEMS IN PRE_DEFINED DATA STRUCTURES.
+
+- let us say we have array of 10 elements now we cannot add 11th element.
+- To deal with such kinds of problem we can have a new array of larger size defined in the heap dynamically.
+- and now pointer is pointing to that array.
+- eg: 
+int *A = new int[10];
+A = new int[20];

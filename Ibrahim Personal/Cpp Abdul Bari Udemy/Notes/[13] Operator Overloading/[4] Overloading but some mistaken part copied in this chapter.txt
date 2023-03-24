@@ -1,0 +1,66 @@
+** RETRIEVING THE STATE OF AN OBJECT
+
+
+** STORING THE STATE OF AN OBJECT
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+class Student
+{
+public:
+    string name;
+    int roll;
+    string branch;
+
+
+    Student() {}
+    Student(string n, int r, string b)
+    {
+        name = n;
+        roll = r;
+        branch = b;
+    }
+
+    friend ofstream & operator<<(ofstream &ofs, Student &s);
+
+};
+
+
+
+ofstream & operator<<(ofstream &ofs, Student &s)
+{
+    ofs<<s.name<<endl;
+    ofs<<s.roll<< endl;
+    ofs<<s.branch<<endl;
+    return ofs;
+}
+
+
+
+int main()
+{
+    Student s;
+    s.name = "Ibru"; s.roll = 10; s.branch="CS";
+
+    ofstream ofs("Student.txt");
+   /*
+    ofs<<s.name<<endl;
+    ofs<<s.roll<< endl;
+    ofs<<s.branch<<endl;
+
+    */
+
+    ofs << s;
+    ofs.close();
+
+    // Instead of this can we write ofs << s1 and complete object is returned.
+	// Hence it is possible to store the state of the object and retrieve the state of the object
+    // To do this we have to overload the insertion operator << in the student class
+    return 0;
+}
+
+
+** 

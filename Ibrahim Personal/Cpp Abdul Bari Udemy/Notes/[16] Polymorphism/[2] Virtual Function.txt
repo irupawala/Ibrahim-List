@@ -1,0 +1,58 @@
+- Here note that when we call a overrided function of the derived class using the pointer of the base class 
+then the functions of the BASE CLASS IS CALLED.
+
+- If we take real world example then let us say we have derived class advanced car which is pointed by the pointer of the base class basic car.
+But the object here is actually advanced car hence will it run as a basic car or advanced car ?. it will run like advanced car though we 
+are calling it a basic car.
+
+- Hence Similarly in the programming if the function is present in the base class as well as derived class then the 
+function of the DERIVED CLASS MUST BE CALLED that is the function should be called based on object AND NOT BASED ON POINTER.
+Because if the function of the base class is called then that is logically wrong.
+
+- Hence to call the overrided function in the derived class we have to make the function in the base class VIRTUAL
+
+*** Hence C++ allows two things:
+
+1. Don't make it virtual - function of the base class will be called.
+2. Make it virtual - function of the derived class will be called
+
+Note the series of situations here:
+
+1. Base class pointer having a function which is virtual.
+2. Derived class having the function which is over-ridden in the base class
+3. Base class pointer.
+4. Derived class object
+5. you are calling the over-rided function of the derived class using the pointer of the base class
+
+#include <iostream>
+
+using namespace std;
+
+
+class BasicCar
+{
+public:
+    virtual void start() // virtual function
+    {
+        cout << "Basic Car started" << endl;
+    }
+};
+
+class AdvanceCar: public BasicCar
+{
+public:
+    void start() // over-rided function
+    {
+        cout << "Advance Car started" << endl;
+    }
+
+};
+int main()
+{
+
+    BasicCar *p = new AdvanceCar();
+    p->start();
+
+    //cout << "Hello world!" << endl;
+    return 0;
+}

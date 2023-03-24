@@ -1,0 +1,43 @@
+* Heap memory is accessed dynamically. Meaning memory is allocated dynamically.
+* The size of the memory required in the heap is decided at run time not at compile time.
+* Mostly we allocate the arrays in the heap and not just float or int.
+
+* Array created in stack:
+
+int A[5] = {1,2,3,4,5}
+
+* Array created in heap:
+
+int *p; // This creates p in stack which stores the address of array in heap.
+p = new int[5];// This new means memory is allocated in heap. whenever you create an array
+// in heap then you need to take its address and assign it to a pointer.
+- Note that the variable p is stored in stack.
+** IBRAHIM: Note here that pointer *p and array in heap new int[5] should always be of same data type
+
+- The same thing is written in single line
+- int *p = new int[5];
+
+- One more difference is stack memory is automatically deleted when the array goes out of scope
+but heap memory will be there as long as program is running hence if you need heap memory for 
+a limited amount of time then you should also DE-ALLOCATE it.
+
+* Heap Memory De-allocation:
+
+- delete []p // here we write [] as we have created an array in heap
+- p = NULL; // This means that pointer p is not pointing anywhere.
+- Also in mordern C++ we can use nullptr instead of NULL.
+
+- If we write p=NULL before delete []p then pointer is not pointing to the memory in heap 
+but the memory is still there as long as program is running. This problem is called Memory leak problem.
+
+
+* Accessing array in heap memory:
+
+- Similar to regular array the array in heap can be accessed using same syntax P[2] = 15;
+- Here note that pointer to an array P is treated the same way as name of an array.
+- 
+
+
+
+
+

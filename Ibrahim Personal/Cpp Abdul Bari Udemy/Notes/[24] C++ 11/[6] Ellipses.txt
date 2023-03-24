@@ -1,0 +1,31 @@
+- Ellipsis is used for taking variable number of arguments in a function
+- But Ellipsis should know number of arguments passed.
+- Syntax is first argument is no of elements and rest of the elements are all the elements.
+- printf and scanf uses ellipses for variable number of arguments
+
+E.g.
+
+int sum(int n, ...)
+{
+
+// for accessing the elements va_list class is available.
+
+va_list list;
+va_start(list, n);
+
+int s=0;
+
+for(int i=0; i<n; i++)
+s+ = va_arg(list, int) // This function will take the list and we have to also mention datatype here
+					  // This will take the elements one by one from the list of ellipsis and everytime
+					  // we have to mention datatype of the argument.
+					  
+va_end(list);		 // For ending the list of arguments
+return s;
+}
+
+main()
+{
+cout << sum(3, 10, 20, 30)
+cout << sum(5, 10, 20, 30, 40, 50)
+}

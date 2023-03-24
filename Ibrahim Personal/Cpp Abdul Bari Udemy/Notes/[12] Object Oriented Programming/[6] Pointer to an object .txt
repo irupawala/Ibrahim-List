@@ -1,0 +1,82 @@
+* Pointers to an Object:
+
+#include <iostream>
+
+using namespace std;
+
+class Rectangle
+{
+    public:
+    int length;
+    int breadth;
+    int area()
+    {
+        return length*breadth;
+    }
+    int perimeter()
+    {
+        return 2*(length+breadth);
+    }
+};
+
+int main()
+{
+
+Rectangle r;
+Rectangle *p;
+p=&r;
+r.length=10; // . operator is used for accessing the members of an object using variable name
+p->length=10; // -> operator is used for accessing the members of an object using pointer for an object.
+
+p->breadth=5;
+cout << p->area();	
+
+}
+***********************************************************************************************************
+
+
+* Creating Objects in heap using pointers:
+
+#include <iostream>
+
+using namespace std;
+
+class Rectangle
+{
+    public:
+    int length;
+    int breadth;
+    int area()
+    {
+        return length*breadth;
+    }
+    int perimeter()
+    {
+        return 2*(length+breadth);
+    }
+};
+
+void main()
+{
+Rectangle *p;
+p = new Rectangle; // This rectangle is defined in heap
+// and p which is stored in stack is pointing to it.
+
+Rectangle *q = new Rectangle(); // writing it in a single line
+
+p->length = 15;
+p->breadth = 10;
+cout << p->area();
+
+*******************************************************************
+
+Rectangle r; // Object created in stack
+Rectangle *p = new rectangle(); // object created in heap
+
+Pointer assignment for object in heap because objects in 
+heap can only be accessed using pointers(in stack)
+
+***************************************************************
+
+
+*** IN JAVA OBJECTS ARE ONLY CREATED IN HEAP AND NOT IN STACK ALSO, LIKE C++

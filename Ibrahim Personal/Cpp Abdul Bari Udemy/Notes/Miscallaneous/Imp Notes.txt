@@ -1,0 +1,14 @@
+* AUTO Datatype:
+
+- One more benefit for using for each loop is AUTO datatype
+- If we don't know the datatype of the elements in array we can write AUTO datatype in for each		
+
+for (auto x: A) // This will automatically make the datatype of x as the datatype available in the array.
+	{
+		cout << x << endl;
+		}
+		
+* INT_MIN and INT_MAX:
+
+- If we write min = INT_MIN then the smallest integer of the program will be assigned to min
+		

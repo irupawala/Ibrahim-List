@@ -1,0 +1,71 @@
+* Let us define class rectangle.
+
+Class Rectangle
+{
+
+int length; // attributes
+int breadth;
+
+int area()
+{
+return length * breadth;
+}
+
+int perimeter()
+{
+return (2*length + 2*breadth)
+}
+
+}; // here semicolon is mandatory.
+
+* Now how to use the class
+
+int main()
+{
+rectangle r1, r2; // here r1 and r2 are objects.
+}
+
+// r1 and r2 are datatypes/ variables of datatype rectangles
+// r1 and r2 will occupy memory in the stack
+// so now r1 and r2 will take 4 bytes of memory in stack
+// 2 bytes for length and 2 bytes for length
+// class and function won't take any memory in stack.
+
+* assigning values to the attributes of the objects
+
+int main()
+{
+rectangle r1, r2; 
+
+r1.length=10;
+r1.breadth=5
+// Now we can calculate area and other functions.
+cout << r1.area();
+r2.length = 15;
+r2.breadth = 10;
+cout << r2.area();
+}
+
+** // These length and breadth cannot be accessed by user because
+by default it becomes PRIVATE.
+** Hence we have to go back to the class and define 
+everything explicitly as PUBLIC.
+
+Class Rectangle
+{
+public:
+
+int length; // attributes
+int breadth;
+
+int area()
+{
+return length * breadth;
+}
+
+int perimeter()
+{
+return (2*length + 2*breadth)
+}
+
+};

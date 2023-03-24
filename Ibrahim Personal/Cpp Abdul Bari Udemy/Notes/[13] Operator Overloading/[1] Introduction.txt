@@ -1,0 +1,54 @@
+- There are various operators available in C++ like +, ++, (), new, delete.
+- All this operators except some can also be used for user defined classes. 
+This property is known as operators overloading.
+
+- Let us look an example where we will write a function to add complex numbers using + overloading
+
+class complex
+{
+private:
+int real;
+int img;
+
+public:
+complex(int r=0, int i=0)
+{
+
+real = r;
+img = i;
+
+}
+
+////complex add(complex x) // return type and argument type is both complex
+complex operator+(complex x)
+{
+ complex temp; 
+ temp.real = real + x.real; // The real here represents the real of class complex itself
+ temp.img = img + x.img; // here the function is called on class c1 hence real and img represents the real and img of class c1
+ return temp;
+}
+
+main()
+
+{
+
+complex C1(3,7);
+complex C2(5,4);
+complex C3;
+
+// C3 = C1.add(C2);
+
+// Instead of add we can write operator+
+
+// then the function name will also get changed to operator+ ?. YES
+
+// - But notice that for calling the function we can write operator+ (C3 = C1.operator+(C2)) or C1 + C2
+// the same way we call the normal + operator
+
+C3 = C1 + C2; // We can add it just like we add the two int or two floats
+
+
+};
+
+// Notice that this operation is like I am having some money and friend is having some money an 
+either of us is adding that money

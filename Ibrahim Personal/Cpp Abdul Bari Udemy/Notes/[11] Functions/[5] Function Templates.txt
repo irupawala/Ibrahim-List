@@ -1,0 +1,52 @@
+- Function templates are the functions which are "GENERIC". Generalised in terms of datatype.
+- Function templates are used for defining generic functions
+• They work for multiple datatypes
+• Datatype is decided based on the type of value passed
+• Datatype is a template variable
+• Function can have multiple template variables
+
+- Example:
+
+Let's say we have 2 functions (overloading)
+
+int max (int x, int y)
+{
+if (x>y)
+return x;
+else
+return y;
+}
+
+float max (float x, float y)
+{
+if (x>y)
+return x;
+else
+return y;
+}
+
+- Here body of the two functions is the same hence is it possible that we have only one function which 
+can take the arguments of any datatype. This is called as function template.
+
+Ex:
+
+template <class T> // here T is class of type template.
+
+T max (T x, T y)
+{
+if (x>y)
+return x;
+else
+return y;
+}
+
+main()
+{
+int c = max(9,5) ; // This will now print the answer in int using the same function
+float d = max(10.5f, 6.9f); // This will now print the answer in float using the same function
+
+max(2.3f,5.6); // This will give an error because both the datatype has to be of same template T.
+// compiler here is unable to decide the datatype thus causing ambiguity.
+}
+
+*** THIS TEMPLATE WORKS FOR ANY DATATYPES. EVEN FOR THE OBJECTS OF YOUR CLASSES.

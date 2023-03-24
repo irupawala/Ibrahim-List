@@ -1,0 +1,59 @@
+** NOTICE THAT WHENEVER THE DERIVED CLASS IS CALLED CONSTRUCTOR OF 
+DEFAULT CLASS IS CALLED FIRST
+
+// Remember the example of Table Manufacurer. For default table dimensions table manufacturer will give order of default table top
+
+// When the derived class is called it will CALL the base class and the base class will be EXECUTED FIRST and then derived class will be EXECUTED
+
+** CALLING HAPPENDS FROM BASE TO DERIVE BUT EXECUTION HAPPENDS FROM DERIVED TO BASE
+#include <iostream>
+
+using namespace std;
+
+class Base
+{
+public:
+
+    Base()
+    {
+        cout << "Default of base " << endl;
+    }
+
+    Base(int x)
+    {
+
+        cout << "Param of base " << x << endl;
+    }
+
+};
+
+class Derived : public Base
+{
+    public:
+    Derived()
+    {
+        cout << "Default of Derived" << endl;
+    }
+
+    Derived(int a)
+    {
+        cout << "Param of Derived " << a << endl;
+    }
+
+    Derived (int x, int a): Base(x)
+    {
+        cout << "Param of Derived " << a << endl;
+    }
+};
+
+
+
+int main()
+{
+   // Derived d;  // calling default constructor of base class from the default constructor of derived class
+   // Derived d(10); // calling default constructor of base class from the parameterized constructor of derived class
+   Derived d(20, 10); // // calling parameterized constructor of base class from the parameterized constructor of derived class
+    return 0;
+
+
+}

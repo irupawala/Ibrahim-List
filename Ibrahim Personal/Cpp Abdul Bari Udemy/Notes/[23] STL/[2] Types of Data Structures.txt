@@ -1,0 +1,15 @@
+- Arrays have fixed size.
+- Instead of array we can have LinkedList. Here instead of having fixed size array we have collection of nodes
+where each node can have values.
+- Benefits of linkedlist is that size of linkedlist grows or reduce as and when numbers are added or deleted.
+- Hence this will take the size depending on the elements hence the size is variable.
+
+- New nodes can be added or deleted anywhere in the LinkedList. This is called singly linkedlist. It has 
+one pointer and can only go in one direction.
+
+- Similarly we have doubly linkedlist where every nodes have previous pointer too hence in Doubly LinkedList
+you can go in both forward and reverse direction.
+
+- Some other data structures are stack, lifo, queue, Deque, Priority Queue, Map, Set.
+
+- C++ provides built-in libraries of classes for all the data structures called as STL.

@@ -1,0 +1,25 @@
+- wchar_t is wide character
+- char16_t and char32_t is used for storing unicode which 
+is just like ASCII code for storing other Natural language
+processing alphabets like chinese, hindi, etc.
+- More info is available in unicode.org
+
+- long int and long long can store larger integers.
+- int can be of 2 bytes, 4 bytes.
+- It depends on the bitsize of the machine i.e. ALU
+
+- FLOAT ALWAYS TAKES 4 BYTES, CHAR ALWAYS TAKES 1 BYTES
+- SIZE OF INT DEPENDS ON COMPILER.
+
+- Float number is stored in IEEE 754 standard in every machine
+- 17.26 is represented in 1726E-2
+
+- Boolean: 
+
+0 : FALSE
+ANY OTHER NO: TRUE
+
+- Void:- Used for defining null function and pointer
+
+* sizeof() is used for learning the size of the datatype
+* CHAR_MIN, INT_MIN, CHAR_MAX, INT_MAX is used for learning the range

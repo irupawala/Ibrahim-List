@@ -1,0 +1,70 @@
+Problems with the pointer gives runtime errors which can be very dangerous
+
+* Problems with the pointers
+
+1. Uninitialized pointer
+2. Memory leak
+3. Dangling pointer
+
+1. Uninitialized pointer:
+
+int *p; // This pointer is not pointing anywhere hence it will take any garbage address
+
+*p = 25 // Now if we assign a value to the location where pointer is pointing than this data is stored in some unknown garbage location.
+
+There are 3 ways if initializing pointer
+
+(i). Assignment to the address of the existing variable: p = &x
+(ii). Assignment to the known address: p = (int *)0x5638
+(iii). Assignment to the heap memory: p = new int(5)
+
+After this if we write cout << *p then the data stored at the location where memory is pointing will be available
+
+2. Memory Leak:
+
+- If we don't deallocate the memory declared in the heap then we say that memory is leaked in the heap.
+
+int *p = new int[5];
+
+
+delete []p;
+p = NULL; we should never do this unless we have remove the memory from heap using the stamement above
+
+- we can also write these statements in place of NULL
+
+p = 0;
+p = nullptr; //nullptr is a stored literal in modern C++
+
+3. Dangling pointers:
+
+- Consider the situation where the pointer in the function deletes the memory in the heap 
+which the pointer in the main is pointing. hence now the pointer in the main function is pointing to 
+undeclared memory location this is called as Dangling pointer
+
+e.g.
+
+void main()
+
+int *p = new int[5]; 
+
+func(p);
+
+void func(int *q)
+
+{
+
+delete []q; // here func is deleting the memory using pointer q which was shared by the main memory
+
+}
+
+- When the control comes back to main program the pointer p is pointing to the memory which doesn't existing
+hence if we try to acccess it using cout << *p then we will get a runtime error.
+- Here p is now dangling pointer.
+
+*** To remove these kinds of error languages like java and .net has removed the pointers and these languages
+are managed language. Hence JVM will take care of these things like not allowing dangling pointers, removing the 
+memory when not in use.
+
+
+
+

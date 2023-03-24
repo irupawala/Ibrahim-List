@@ -1,0 +1,36 @@
+
+
+Eg:
+
+int add (int x, int y)
+{
+return x+y;
+}
+
+int add (int x, int y, int z)
+{
+return x+y+z;
+}
+
+main()
+{
+int a = add(2,5);
+int b = add(2,5,8);
+int c = add(2, 5, 0); 
+
+- here the result of a and c will be the same. Hence we can have a single function if the value of the third 
+argument by default is 0.
+- This can be done by assigning the default value of the third argument as 0.
+
+int add (int x, int y, int z=0) // This is called as default argument. And using default argument you can 
+// combine the overloaded function and write them as a single function.
+{
+return x+y+z;
+}
+
+
+*** YOU MUST DEFINE DEFAULT ARGUMENTS FROM RIGHT TO LEFT.
+
+- Note that if you write default arguments like this int func (int a=0; int b; int c=0; int d=0).
+then the compiler will get confused. you cannot skip one argument in between default arguments
+

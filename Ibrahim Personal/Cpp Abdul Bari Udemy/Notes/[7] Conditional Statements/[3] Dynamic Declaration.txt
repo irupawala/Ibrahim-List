@@ -1,0 +1,44 @@
+* Note that if you define a variable in a function then the memory for that function is allocated dynamically during the function only and removed 
+from the memory once you exit the function
+
+e.g.
+
+if ()
+{
+	int k;
+	}
+	
+- Now k will be allocated memory in heap and will removed from heap once you exit the if() function.
+
+* Consider this situation:
+
+int main()
+{
+
+
+int a,b,c;
+int k = exp;
+
+if (k<a)
+	{				// now we want the scope of this variable inside the if only
+	}
+
+if (int k=exp; k<a) // hence C++17 onwards provides this function to declare the scope just inside this if
+	{
+	}
+
+
+}
+
+* If you want to limit the scope of any variable then enclose it inside the dummy block { }
+
+ {
+int d=a-b;
+if(true)
+ {
+ cout<<d<<endl;
+ }
+ }
+ cout<<d<<endl; // here d won't be accessible here as it's scope has ended in the last bracket
+ 
+ 

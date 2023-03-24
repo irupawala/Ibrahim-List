@@ -1,0 +1,63 @@
+
+int division (int a, int b)
+{
+    if (b == 0)
+        throw 1;
+    return a/b;
+}
+
+// Note that you can throw int, double, float, string and also object of the class
+
+// Notice though that for throwing string you should write keyword string("MyString") for the throwing
+
+
+// refer the code for this
+
+class MyException
+{
+};
+
+Also note that if you are throwing your own class exception then it is possible 
+that you can also inherit your class from the buit-in class in C++ called exception
+
+class MyException: public exception
+{
+	public:
+	char *what() // what is a method. Here you can also over-write this method to return "MyException" as per your need
+	{
+	return "MyException";
+	}
+
+};
+
+
+** ALSO NOTE THAT IF A FUNCTION IS THROWING SOMETHING YOU CAN DECLARE THAT FUNCTION IS THROWING SOMETHING IF YOU LIKE
+
+- For this you have to write throw keyword in the function definition
+
+int division (int a, int b) throw (MyException)
+{
+    if (b == 0)
+        throw MyException;
+    return a/b;
+}
+
+
+* If you are throwing int then you should write int, if you are throwing class then you should write built-in
+class name in the definition.
+
+int division (int a, int b) throw (int)
+{
+    if (b == 0)
+        throw 1;
+    return a/b;
+}
+
+* If you are not throwing anything then you can also indicate that by having an empty bracket in the definition 
+followed by throw
+
+int division (int a, int b) throw ()
+{
+
+    return a/b;
+}

@@ -1,0 +1,9 @@
+- Stream is a flow of data or flow of character.
+- Streams are used for accessing the data from outside the program like external sources to destination
+- E.g. program accesses to keyboard, monitor, file, Network
+- For input/ output stream there is buildin class available called iostream. From this the classes are 
+coming out like istream and ostream.
+- For file access there are classes like ifstream(input file stream) and ofstream
+- cin and cout are objects of istream and ostream respectively.
+- Also we can OVERLOAD insertion and extraction operator (<< and >>).
+- We can use same insertion and extraction operator to access file in c++

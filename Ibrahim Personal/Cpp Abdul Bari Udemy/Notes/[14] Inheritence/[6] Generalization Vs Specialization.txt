@@ -1,0 +1,18 @@
+* Consider the two examples. 
+
+1. Cuboid Inherited from rectangle. OR fortuna inherited from Innova
+
+2. Rectangle, circle, quadrilateral have a generalized term SHAPE. Shape is a virtual term which does not acually exist.
+
+- Here 2. is generalization where the child classes already exists but to bring them to a common platform we have given a name shape.
+We can calculate area and perimeter of a rectangle, circle but not of shape but shape has those functions it just can't be calculated 
+because shape does not have dimensions.
+
+Hence there are two types of Inheritence.
+
+1. Parent was existing and child was defined later hence child borrowed the features from parents. This is specialization.
+Purpose here is to give something to child class.
+
+2. Child classes were existing and then we defined the base class. This is generalization.
+Purpose here is to group the child classes together. Hence purpose of Generalizrion is nothing but POLYMORPHISM.
+

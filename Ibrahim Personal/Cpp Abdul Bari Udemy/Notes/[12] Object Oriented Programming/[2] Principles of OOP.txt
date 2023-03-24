@@ -1,0 +1,55 @@
+1. Abstraction - hiding the details of functions
+2. Encapsulation - hiding the details of data as well as function
+	- Data hiding
+3. Inheritence
+4. Polymorphism
+
+1. Abstraction:
+
+- Through the process of abstraction, a programmer 
+hides all but the relevant data about an object in 
+order to reduce complexity and increase efficiency.
+- In Programs we just want to know the name of the 
+function and not the details inside it. This is called 
+abstraction.
+
+2. Encapsulation:
+
+- In OOP using C++ we achive the abstraction using
+class. class contains DATA And FUNCTIONS. This is called Encapsulation.
+- In C++ functions are grouped together using class.
+
+** Precise difference between abstraction and Encapsulation.
+Encapsulation is the packing of data and functions operating on that data
+into a single component and restricting the access to some of the object's components.
+Encapsulation means that the internal representation of an object is generally 
+hidden from view outside of the object's definition.
+
+Abstraction is a mechanism which represent the essential features without
+including implementation details.
+
+Encapsulation:-- Information hiding.
+Abstraction:-- Implementation hiding.
+
+E.g. 
+
+Class My
+{
+private:
+1. Data
+public:
+2. function()
+}
+
+
+3. Inheritence:
+
+- Borrowing the feature in the derived class from the base class.
+
+4. Polymorphism:
+
+- The word polymorphism means having many forms. In simple words, 
+we can define polymorphism as the ability of a message to be displayed 
+in more than one form.
+
+- Eg if you know to drive a car you can drive any car

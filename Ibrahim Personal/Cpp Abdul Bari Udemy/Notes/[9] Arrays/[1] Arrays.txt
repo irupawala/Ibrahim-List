@@ -1,0 +1,40 @@
+Array is a collection of similar data elements under one name, each element is accessible using its index
+• Memory for array is allocated contagiously
+• For-each loop is used for accessing array
+• N-dimension arrays are supported by C++
+• Two-Dimensional Arrays are sued for Matrices
+• Array can be created in Stack or Heap Section of memory
+
+- int A[5] = {1, 2, 3}
+- float B[3] = {1.2, 3.4, 5.6}
+- Char C[] = {'A', 'B', 'C'}
+
+int main()
+	{
+		float A[] = {2.3f, 4.5f, 9, 8, 7};
+		
+		for (int x:A)
+			cout << x << endl;
+			
+		return 0;
+		
+	}
+	
+	
+int main()
+	{
+		char A[] = {'A', 66, 'C', 68};
+		
+		for (auto x:A)
+		// for (int x:A)
+			cout << x << endl;
+			
+		return 0;
+		
+	}
+
+- Always notice that here the name of the array A, B, C never stores the value itself but the address of the array
+- In C the operator a[b] = *(a+b) hence individual elements of array can be accessed as a[b], b[a], *(a+b)
+- Visit the link https://stackoverflow.com/questions/381542/with-arrays-why-is-it-the-case-that-a5-5a/381549#381549
+
+ 
