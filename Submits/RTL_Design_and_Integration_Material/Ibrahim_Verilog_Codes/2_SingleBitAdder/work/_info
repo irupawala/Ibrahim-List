@@ -1,0 +1,71 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ibrah/Desktop/Documents/Ibrahim_Verilog_Codes/2_SingleBitAdder
+vparam_adder
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 L`]PChFK3;[77gc0Dz>on0
+I7I=g=3[CDCbN;AM^j@`d^2
+R0
+w1681888485
+8parametarizable_full_adder.v
+Fparametarizable_full_adder.v
+L0 1
+Z2 OL;L;10.6c;65
+Z3 !s108 1681888918.000000
+Z4 !s107 parametarizable_full_adder.v|tb_adder.v|
+Z5 !s90 -reportprogress|300|tb_adder.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 S:AaTC174[lWePlz6g_]R1
+IbXTWOzf@UD2GQioRZaAi@2
+R0
+w1681888915
+Z8 8tb_adder.v
+Z9 Ftb_adder.v
+L0 3
+R2
+R3
+R4
+R5
+!i113 0
+R6
+R7
+vtb_adder
+!s110 1681888399
+!i10b 1
+!s100 eYzm:<9kXK>?eJ1H2HL=G2
+I@HCo]h@3_=<`;1JcPb6=;2
+R1
+R0
+w1681888324
+R8
+R9
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1681888399.000000
+R4
+R5
+!i113 0
+R6
+R7

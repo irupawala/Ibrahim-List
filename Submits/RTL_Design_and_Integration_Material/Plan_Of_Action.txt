@@ -1,0 +1,32 @@
+25-26 ==> Basic Design Concept
+27-8 ==> RTL Integration, 1st Job Application, 7th Wajebaat
+9-16 ==> Verilog, C++, Linux
+17-28 ==> Revision, DSC, VLSI Design Revision
+
+28 ==> could be, but lets hope not and also hope that some extra time is given for H1B
+- 28 onwards Focus on getting as many interviews as possible
+
+
+- How to implement tri-state buffer in verilog ?
+https://www.youtube.com/watch?v=X2HPjppH7Rs
+
+3 output states - 0, 1, z, 
+3 input states - input, control, output
+in control out
+0	0	z
+1	0	z
+0	1	0
+1	1	1
+
+To summarize tri-state buffer is a current valve which can shut off the output from specific components
+the tri-state buffer allows us to select one output for many to send to a wire or bus
+but we need to make absolutely certain that same wire do not transfer to same wire or bus
+
+Demorgan's law = ~(A+B) = ~A.~B and ~(A.B) = ~A + ~B
+Absorption law = A(A+C) = A and A + AC = A
+Distributive law = A(B+C) = AB + AC and A + BC = (A+B)(A+C)
+
+
+https://www.youtube.com/watch?v=YS-LHzb4djg
+https://www.youtube.com/watch?v=fwh-KISWs7c
+https://www.youtube.com/watch?v=ovQ5VYlEc8o&t=656s

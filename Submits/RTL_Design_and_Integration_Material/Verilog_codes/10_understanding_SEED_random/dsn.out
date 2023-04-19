@@ -1,0 +1,38 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000025278072c60 .scope module, "tb" "tb" 2 1;
+ .timescale 0 0;
+v0000025278072df0_0 .var/i "a", 31 0;
+v0000025278072e90_0 .var/i "seed", 31 0;
+    .scope S_0000025278072c60;
+T_0 ;
+    %pushi/vec4 1033932, 0, 32;
+    %store/vec4 v0000025278072e90_0, 0, 32;
+    %pushi/vec4 5, 0, 32;
+T_0.0 %dup/vec4;
+    %pushi/vec4 0, 0, 32;
+    %cmp/s;
+    %jmp/1xz T_0.1, 5;
+    %jmp/1 T_0.1, 4;
+    %pushi/vec4 1, 0, 32;
+    %sub;
+    %vpi_func 2 7 "$random" 32, v0000025278072e90_0 {0 0 0};
+    %store/vec4 v0000025278072df0_0, 0, 32;
+    %vpi_call 2 8 "$display", "a=%d", v0000025278072df0_0 {0 0 0};
+    %jmp T_0.0;
+T_0.1 ;
+    %pop/vec4 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "SEED_random.v";

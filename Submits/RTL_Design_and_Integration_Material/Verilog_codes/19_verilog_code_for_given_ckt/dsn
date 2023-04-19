@@ -1,0 +1,92 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000206e2916000 .scope module, "sample" "sample" 2 10;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /INPUT 1 "clk";
+    .port_info 4 /INPUT 1 "res";
+    .port_info 5 /OUTPUT 1 "y";
+    .port_info 6 /OUTPUT 1 "w";
+o00000206e2917278 .functor BUFZ 1, C4<z>; HiZ drive
+o00000206e29172a8 .functor BUFZ 1, C4<z>; HiZ drive
+L_00000206e28e32a0 .functor AND 1, o00000206e2917278, o00000206e29172a8, C4<1>, C4<1>;
+o00000206e29172d8 .functor BUFZ 1, C4<z>; HiZ drive
+L_00000206e2915070 .functor NOT 1, o00000206e29172d8, C4<0>, C4<0>, C4<0>;
+v00000206e2914380_0 .net "a", 0 0, o00000206e2917278;  0 drivers
+v00000206e2914420_0 .net "b", 0 0, o00000206e29172a8;  0 drivers
+v00000206e29144c0_0 .net "c", 0 0, o00000206e29172d8;  0 drivers
+o00000206e2916fd8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000206e2914560_0 .net "clk", 0 0, o00000206e2916fd8;  0 drivers
+v00000206e2914600_0 .net "n1", 0 0, L_00000206e28e32a0;  1 drivers
+v00000206e29146a0_0 .net "n2", 0 0, L_00000206e2915070;  1 drivers
+o00000206e2917068 .functor BUFZ 1, C4<z>; HiZ drive
+v00000206e295fc50_0 .net "res", 0 0, o00000206e2917068;  0 drivers
+v00000206e2960010_0 .net "w", 0 0, v00000206e2914240_0;  1 drivers
+v00000206e29603d0_0 .net "y", 0 0, v00000206e28e2e10_0;  1 drivers
+S_00000206e2916190 .scope module, "d1" "dff" 2 19, 2 1 0, S_00000206e2916000;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d";
+    .port_info 1 /INPUT 1 "clk";
+    .port_info 2 /INPUT 1 "res";
+    .port_info 3 /OUTPUT 1 "q";
+v00000206e2916320_0 .net "clk", 0 0, o00000206e2916fd8;  alias, 0 drivers
+v00000206e28c9590_0 .net "d", 0 0, L_00000206e28e32a0;  alias, 1 drivers
+v00000206e28e2e10_0 .var "q", 0 0;
+v00000206e28cae50_0 .net "res", 0 0, o00000206e2917068;  alias, 0 drivers
+E_00000206e28cb530 .event posedge, v00000206e2916320_0;
+S_00000206e2914010 .scope module, "d2" "dff" 2 20, 2 1 0, S_00000206e2916000;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d";
+    .port_info 1 /INPUT 1 "clk";
+    .port_info 2 /INPUT 1 "res";
+    .port_info 3 /OUTPUT 1 "q";
+v00000206e28caef0_0 .net "clk", 0 0, o00000206e2916fd8;  alias, 0 drivers
+v00000206e29141a0_0 .net "d", 0 0, L_00000206e2915070;  alias, 1 drivers
+v00000206e2914240_0 .var "q", 0 0;
+v00000206e29142e0_0 .net "res", 0 0, o00000206e2917068;  alias, 0 drivers
+    .scope S_00000206e2916190;
+T_0 ;
+    %wait E_00000206e28cb530;
+    %load/vec4 v00000206e28cae50_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_0.0, 4;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000206e28e2e10_0, 0, 1;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v00000206e28c9590_0;
+    %store/vec4 v00000206e28e2e10_0, 0, 1;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_00000206e2914010;
+T_1 ;
+    %wait E_00000206e28cb530;
+    %load/vec4 v00000206e29142e0_0;
+    %pad/u 32;
+    %cmpi/e 1, 0, 32;
+    %jmp/0xz  T_1.0, 4;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000206e2914240_0, 0, 1;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v00000206e29141a0_0;
+    %store/vec4 v00000206e2914240_0, 0, 1;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "verilog_code_for_given_ckt.v";

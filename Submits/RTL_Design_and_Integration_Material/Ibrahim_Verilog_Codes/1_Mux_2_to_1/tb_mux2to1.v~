@@ -1,0 +1,40 @@
+module tb;
+	// 1. Declare variables
+	reg [7:0] a, b;
+	reg sel;
+	wire [7:0] out, outbar;
+	
+	// 2. Instantiate the design
+	mux2x1 dut (.a(a), .b(b), .sel(sel), .out(out), .outbar(outbar));
+
+	// 3. Drive Inputs
+	initial begin
+		a = 8'd7;
+		b = 8'd3;
+		sel = 1'b1;
+		#2;
+		a = 8'd2;
+		b = 8'd8;
+		sel = 1'b0;
+		#2;
+		a = 8'd4;
+		b = 8'd5;
+		sel = 1'b1;
+		#2;
+		a = 8'd3;
+		b = 8'd9;
+		sel = 1'b0;
+		#10;
+	end
+
+	// 4. Monitor Inputs
+	initial begin
+		$monitor("time = %0t, a = %d, b = %d, sel = %d, out = %d, outbar = %d", $time, a, b, sel, out, outbar);
+	end
+	
+	//5. Log waves
+	initial begin 
+		$dumpfile("mux.vcd");
+		$dumpvars; // This should always come after dumpfile
+	end
+endmodule

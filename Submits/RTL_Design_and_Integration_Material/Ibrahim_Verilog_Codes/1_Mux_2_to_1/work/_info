@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ibrah/Desktop/Documents/Ibrahim_Verilog_Codes/1_Mux_2_to_1
+vmux_2_to_1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 P63YI:<SVWkhZ=m]cJ<OE3
+I`7k97I>eBXoUJ3?1zCNl60
+R0
+w1681883065
+8C:/Users/ibrah/Desktop/Documents/Ibrahim_Verilog_Codes/1_Mux_2_to_1/mux_2_to_1.v
+FC:/Users/ibrah/Desktop/Documents/Ibrahim_Verilog_Codes/1_Mux_2_to_1/mux_2_to_1.v
+L0 1
+Z2 OL;L;10.6c;65
+!s108 1681883951.000000
+!s107 C:/Users/ibrah/Desktop/Documents/Ibrahim_Verilog_Codes/1_Mux_2_to_1/mux_2_to_1.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ibrah/Desktop/Documents/Ibrahim_Verilog_Codes/1_Mux_2_to_1/mux_2_to_1.v|
+!i113 0
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z3 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 E1dAo4WDYibbYTmcFAhe93
+I5lcn`MnmH0oW=P:XI@MC63
+R0
+w1681886232
+8tb_mux2to1.v
+Ftb_mux2to1.v
+L0 1
+R2
+!s108 1681886243.000000
+!s107 tb_mux2to1.v|
+!s90 -reportprogress|300|tb_mux2to1.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3

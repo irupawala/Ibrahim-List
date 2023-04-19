@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ibrah/Desktop/Documents/Verilog_codes/DFF
+vdff
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Uez1BD1jTGe49<@b^Fo=R1
+IBVj^JKiB22=lg8OC8_SGB3
+R0
+w1680840971
+8DFF.v
+FDFF.v
+L0 2
+Z2 OL;L;10.6c;65
+Z3 !s108 1681913837.000000
+Z4 !s107 DFF.v|DFF_tb.v|
+Z5 !s90 -reportprogress|300|DFF_tb.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 W^8EZkO`Il3M0_2af3=S:3
+Ijk`G@?i_:ST6a7iS?RSVo2
+R0
+w1681913833
+8DFF_tb.v
+FDFF_tb.v
+L0 37
+R2
+R3
+R4
+R5
+!i113 0
+R6
+R7
