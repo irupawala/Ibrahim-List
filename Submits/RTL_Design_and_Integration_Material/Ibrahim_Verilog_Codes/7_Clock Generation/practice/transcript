@@ -1,0 +1,373 @@
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:05:54 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_3.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:05:54 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt tb "+freq=200" "+duty=50" 
+# Start time: 13:05:54 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb
+# Loading work.tb
+# ** Warning: (vsim-PLI-3691) tb_clock_3.v(18): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_3.v
+# ** Warning: (vsim-PLI-3691) tb_clock_3.v(19): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_3.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ibrah  Hostname: LAPTOP-FPG5OLLT  ProcessID: 3376
+#           Attempting to use alternate WLF file "./wlftsmq29h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsmq29h
+# ** Note: $finish    : tb_clock_3.v(24)
+#    Time: 200 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_clock_3.v line 24
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:06:33 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_3.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:06:33 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work/_lib1_1.qpg" in read mode
+# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work/_lib1_1.qpg" in read mode
+# doVOpenFlatFile(): INTERNAL ERROR: page load failed for file C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work/tb/_primary.dbs (1:1 1:1 49 0 403 1682193993 0x10b:0x101)
+# End time: 13:06:36 on Apr 22,2023, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 5
+# vsim -novopt tb "+freq=200" "+duty=50" 
+# Start time: 13:06:36 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb
+# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work/_lib1_1.qpg" in read mode
+# doVOpenFlatFile(): INTERNAL ERROR: Cannot obtain auxid to open C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work/tb/_primary.dat
+# ** Error: (vlog-7) Failed to open design unit file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work/tb/_primary.dat" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: vlog failed.
+# ** Error: subinvocation of vlog failed; return status = 1.
+# ** Error: (vsim-3171) Could not find machine code for 'C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb'.
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./../run.do PAUSED at line 5
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:07:34 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_3.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:07:34 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt tb "+freq=200" "+duty=50" 
+# Start time: 13:06:36 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb
+# Loading work.tb
+# ** Warning: (vsim-PLI-3691) tb_clock_3.v(15): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_3.v
+# ** Warning: (vsim-PLI-3691) tb_clock_3.v(16): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_3.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ibrah  Hostname: LAPTOP-FPG5OLLT  ProcessID: 3376
+#           Attempting to use alternate WLF file "./wlfti4by8t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfti4by8t
+# ** Note: $finish    : tb_clock_3.v(21)
+#    Time: 200 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_clock_3.v line 21
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:08:50 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_3.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:08:50 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:08:54 on Apr 22,2023, Elapsed time: 0:02:18
+# Errors: 2, Warnings: 6
+# vsim -novopt tb "+freq=200" "+duty=50" 
+# Start time: 13:08:54 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb
+# Loading work.tb
+# ** Warning: (vsim-PLI-3691) tb_clock_3.v(18): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_3.v
+# ** Warning: (vsim-PLI-3691) tb_clock_3.v(19): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_3.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ibrah  Hostname: LAPTOP-FPG5OLLT  ProcessID: 3376
+#           Attempting to use alternate WLF file "./wlftzw7nyt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftzw7nyt
+# ** Note: $finish    : tb_clock_3.v(24)
+#    Time: 200 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_clock_3.v line 24
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:17:50 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_4.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:17:50 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:17:51 on Apr 22,2023, Elapsed time: 0:08:57
+# Errors: 0, Warnings: 5
+# vsim -novopt tb "+freq=200" "+duty=50" "+jitter=20" 
+# Start time: 13:17:51 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb
+# Loading work.tb
+# ** Warning: (vsim-PLI-3691) tb_clock_4.v(21): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_4.v
+# ** Warning: (vsim-PLI-3691) tb_clock_4.v(22): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_4.v
+# ** Warning: (vsim-PLI-3691) tb_clock_4.v(23): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_4.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ibrah  Hostname: LAPTOP-FPG5OLLT  ProcessID: 3376
+#           Attempting to use alternate WLF file "./wlftnzeqg7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnzeqg7
+# ** Note: $finish    : tb_clock_4.v(28)
+#    Time: 200 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_clock_4.v line 28
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:18:20 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_4.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:18:20 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:18:21 on Apr 22,2023, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 6
+# vsim -novopt tb "+freq=200" "+duty=50" "+jitter=80" 
+# Start time: 13:18:21 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb
+# Loading work.tb
+# ** Warning: (vsim-PLI-3691) tb_clock_4.v(21): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_4.v
+# ** Warning: (vsim-PLI-3691) tb_clock_4.v(22): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_4.v
+# ** Warning: (vsim-PLI-3691) tb_clock_4.v(23): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_4.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ibrah  Hostname: LAPTOP-FPG5OLLT  ProcessID: 3376
+#           Attempting to use alternate WLF file "./wlftbzx46w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbzx46w
+# ** Note: $finish    : tb_clock_4.v(28)
+#    Time: 200 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_clock_4.v line 28
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:27:52 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_45.v 
+# ** Error: (vlog-7) Failed to open design unit file "tb_clock_45.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 13:27:52 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_clock_45.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:28:03 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_5.v 
+# -- Compiling module tb
+# ** Error: tb_clock_5.v(32): (vlog-2730) Undefined variable: 'prev_edge_time'.
+# ** Error: tb_clock_5.v(32): (vlog-2730) Undefined variable: 'cur_edge_time'.
+# ** Error: tb_clock_5.v(34): (vlog-2730) Undefined variable: 'tp_calc'.
+# ** Error: tb_clock_5.v(35): (vlog-2730) Undefined variable: 'freq_calc'.
+# End time: 13:28:03 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_clock_5.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:28:43 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_5.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:28:43 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:28:43 on Apr 22,2023, Elapsed time: 0:10:22
+# Errors: 11, Warnings: 6
+# vsim -novopt tb "+freq=200" "+duty=50" "+jitter=80" 
+# Start time: 13:28:43 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb
+# Loading work.tb
+# ** Warning: (vsim-PLI-3691) tb_clock_5.v(22): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_5.v
+# ** Warning: (vsim-PLI-3691) tb_clock_5.v(23): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_5.v
+# ** Warning: (vsim-PLI-3691) tb_clock_5.v(24): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_5.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ibrah  Hostname: LAPTOP-FPG5OLLT  ProcessID: 3376
+#           Attempting to use alternate WLF file "./wlftq5b7wi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftq5b7wi
+# ** Error (suppressible): (vsim-8630) tb_clock_5.v(36): Infinity results from division operation.
+# freq_cal = 1.#INF00
+# freq_cal = 2000.000000
+# freq_cal = 470.588235
+# freq_cal = 186.915888
+# freq_cal = 128.205128
+# freq_cal = 166.666667
+# freq_cal = 212.765957
+# freq_cal = 138.408304
+# freq_cal = 145.454545
+# freq_cal = 158.102767
+# freq_cal = 128.617363
+# freq_cal = 136.054422
+# freq_cal = 160.642570
+# freq_cal = 158.730159
+# freq_cal = 238.095238
+# freq_cal = 239.520958
+# freq_cal = 127.795527
+# freq_cal = 127.388535
+# freq_cal = 194.174757
+# freq_cal = 341.880342
+# freq_cal = 519.480519
+# freq_cal = 434.782609
+# freq_cal = 289.855072
+# freq_cal = 412.371134
+# freq_cal = 283.687943
+# freq_cal = 202.020202
+# freq_cal = 186.915888
+# freq_cal = 129.032258
+# freq_cal = 185.185185
+# freq_cal = 294.117647
+# freq_cal = 168.067227
+# freq_cal = 228.571429
+# freq_cal = 350.877193
+# freq_cal = 170.212766
+# freq_cal = 170.212766
+# freq_cal = 176.211454
+# freq_cal = 138.888889
+# freq_cal = 197.044335
+# freq_cal = 264.900662
+# freq_cal = 178.571429
+# ** Note: $finish    : tb_clock_5.v(29)
+#    Time: 200 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_clock_5.v line 29
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:29:17 on Apr 22,2023
+# vlog -reportprogress 300 tb_clock_5.v 
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 13:29:17 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:29:18 on Apr 22,2023, Elapsed time: 0:00:35
+# Errors: 1, Warnings: 6
+# vsim -novopt tb "+freq=200" "+duty=50" "+jitter=5" 
+# Start time: 13:29:18 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice/work.tb
+# Loading work.tb
+# ** Warning: (vsim-PLI-3691) tb_clock_5.v(22): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_5.v
+# ** Warning: (vsim-PLI-3691) tb_clock_5.v(23): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_5.v
+# ** Warning: (vsim-PLI-3691) tb_clock_5.v(24): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb_clock_5.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ibrah  Hostname: LAPTOP-FPG5OLLT  ProcessID: 3376
+#           Attempting to use alternate WLF file "./wlftaq5y2g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftaq5y2g
+# ** Error (suppressible): (vsim-8630) tb_clock_5.v(36): Infinity results from division operation.
+# freq_cal = 1.#INF00
+# freq_cal = 380.952381
+# freq_cal = 192.307692
+# freq_cal = 199.004975
+# freq_cal = 202.020202
+# freq_cal = 196.078431
+# freq_cal = 198.019802
+# freq_cal = 197.044335
+# freq_cal = 194.174757
+# freq_cal = 201.005025
+# freq_cal = 198.019802
+# freq_cal = 198.019802
+# freq_cal = 203.045685
+# freq_cal = 204.081633
+# freq_cal = 198.019802
+# freq_cal = 190.476190
+# freq_cal = 195.121951
+# freq_cal = 203.045685
+# freq_cal = 203.045685
+# freq_cal = 202.020202
+# freq_cal = 206.185567
+# freq_cal = 199.004975
+# freq_cal = 197.044335
+# freq_cal = 204.081633
+# freq_cal = 198.019802
+# freq_cal = 198.019802
+# freq_cal = 198.019802
+# freq_cal = 197.044335
+# freq_cal = 206.185567
+# freq_cal = 209.424084
+# freq_cal = 199.004975
+# freq_cal = 195.121951
+# freq_cal = 195.121951
+# freq_cal = 191.387560
+# freq_cal = 201.005025
+# freq_cal = 206.185567
+# freq_cal = 204.081633
+# freq_cal = 202.020202
+# freq_cal = 203.045685
+# freq_cal = 205.128205
+# freq_cal = 201.005025
+# ** Note: $finish    : tb_clock_5.v(29)
+#    Time: 200 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_clock_5.v line 29
+# End time: 13:42:36 on Apr 22,2023, Elapsed time: 0:13:18
+# Errors: 1, Warnings: 6

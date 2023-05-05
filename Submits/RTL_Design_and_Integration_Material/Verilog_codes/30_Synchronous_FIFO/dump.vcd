@@ -1,0 +1,659 @@
+$date
+	Sat Apr 29 01:54:22 2023
+$end
+$version
+	QuestaSim Version 10.6c
+$end
+$timescale
+	1ns
+$end
+
+$scope module tb $end
+$var parameter 32 ! DEPTH $end
+$var parameter 32 " WIDTH $end
+$var parameter 32 # PTR_WIDTH $end
+$var reg 1 $ clk_i $end
+$var reg 1 % rst_i $end
+$var reg 1 & wr_en_i $end
+$var reg 1 ' rd_en_i $end
+$var reg 8 ( wdata_i [7:0] $end
+$var wire 1 ) wr_error_o $end
+$var wire 1 * rd_error_o $end
+$var wire 1 + full_o $end
+$var wire 1 , empty_o $end
+$var wire 1 - rdata_o [7] $end
+$var wire 1 . rdata_o [6] $end
+$var wire 1 / rdata_o [5] $end
+$var wire 1 0 rdata_o [4] $end
+$var wire 1 1 rdata_o [3] $end
+$var wire 1 2 rdata_o [2] $end
+$var wire 1 3 rdata_o [1] $end
+$var wire 1 4 rdata_o [0] $end
+$var integer 32 5 num_wr $end
+$var integer 32 6 num_rd $end
+$var integer 32 7 i $end
+$var integer 32 8 j $end
+$var reg 240 9 testname [240:1] $end
+
+$scope task write_fifo $end
+$var integer 32 : num_wr $end
+$upscope $end
+
+$scope task read_fifo $end
+$var integer 32 ; num_rd $end
+$upscope $end
+
+$scope module dut $end
+$var parameter 32 < DEPTH $end
+$var parameter 32 = WIDTH $end
+$var parameter 32 > PTR_WIDTH $end
+$var wire 1 ? clk_i $end
+$var wire 1 @ rst_i $end
+$var wire 1 A wr_en_i $end
+$var wire 1 B rd_en_i $end
+$var wire 1 C wdata_i [7] $end
+$var wire 1 D wdata_i [6] $end
+$var wire 1 E wdata_i [5] $end
+$var wire 1 F wdata_i [4] $end
+$var wire 1 G wdata_i [3] $end
+$var wire 1 H wdata_i [2] $end
+$var wire 1 I wdata_i [1] $end
+$var wire 1 J wdata_i [0] $end
+$var reg 1 K wr_error_o $end
+$var reg 1 L rd_error_o $end
+$var reg 1 M full_o $end
+$var reg 1 N empty_o $end
+$var reg 8 O rdata_o [7:0] $end
+$var reg 4 P rd_ptr [3:0] $end
+$var reg 4 Q wr_ptr [3:0] $end
+$var reg 1 R wr_toggle_f $end
+$var reg 1 S rd_toggle_f $end
+$var integer 32 T i $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+1%
+0&
+0'
+b0 (
+b1110100011001010111001101110100010111110110010101101101011100000111010001111001010111110110010101110010011100100110111101110010 9
+xK
+xL
+xM
+xN
+bx O
+bx P
+bx Q
+xR
+xS
+b10000 !
+b1000 "
+b100 #
+b10000 <
+b1000 =
+b100 >
+bx 5
+bx 6
+bx 7
+bx 8
+bx T
+bx :
+bx ;
+x)
+x*
+x+
+x,
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+0B
+0A
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+1@
+0?
+$end
+#5
+1$
+1?
+0K
+0L
+0M
+1N
+b0 O
+b0 P
+b0 Q
+0R
+0S
+b0 T
+b1 T
+b10 T
+b11 T
+b100 T
+b101 T
+b110 T
+b111 T
+b1000 T
+b1001 T
+b1010 T
+b1011 T
+b1100 T
+b1101 T
+b1110 T
+b1111 T
+b10000 T
+0%
+b10000 :
+b0 7
+0)
+0*
+0+
+1,
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0@
+0N
+1N
+#10
+0$
+0?
+#15
+1$
+1?
+1&
+b100100 (
+b1 7
+1A
+1H
+1E
+#20
+0$
+0?
+#25
+1$
+1?
+b1 Q
+b10000001 (
+b10 7
+1J
+0H
+0E
+1C
+0N
+0,
+#30
+0$
+0?
+#35
+1$
+1?
+b10 Q
+b1001 (
+b11 7
+1G
+0C
+#40
+0$
+0?
+#45
+1$
+1?
+b11 Q
+b1100011 (
+b100 7
+1I
+0G
+1E
+1D
+#50
+0$
+0?
+#55
+1$
+1?
+b100 Q
+b1101 (
+b101 7
+0I
+1H
+1G
+0E
+0D
+#60
+0$
+0?
+#65
+1$
+1?
+b101 Q
+b10001101 (
+b110 7
+1C
+#70
+0$
+0?
+#75
+1$
+1?
+b110 Q
+b1100101 (
+b111 7
+0G
+1E
+1D
+0C
+#80
+0$
+0?
+#85
+1$
+1?
+b111 Q
+b10010 (
+b1000 7
+0J
+1I
+0H
+1F
+0E
+0D
+#90
+0$
+0?
+#95
+1$
+1?
+b1000 Q
+b1 (
+b1001 7
+1J
+0I
+0F
+#100
+0$
+0?
+#105
+1$
+1?
+b1001 Q
+b1101 (
+b1010 7
+1H
+1G
+#110
+0$
+0?
+#115
+1$
+1?
+b1010 Q
+b1110110 (
+b1011 7
+0J
+1I
+0G
+1F
+1E
+1D
+#120
+0$
+0?
+#125
+1$
+1?
+b1011 Q
+b111101 (
+b1100 7
+1J
+0I
+1G
+0D
+#130
+0$
+0?
+#135
+1$
+1?
+b1100 Q
+b11101101 (
+b1101 7
+0F
+1D
+1C
+#140
+0$
+0?
+#145
+1$
+1?
+b1101 Q
+b10001100 (
+b1110 7
+0J
+0E
+0D
+#150
+0$
+0?
+#155
+1$
+1?
+b1110 Q
+b11111001 (
+b1111 7
+1J
+0H
+1F
+1E
+1D
+#160
+0$
+0?
+#165
+1$
+1?
+b1111 Q
+b11000110 (
+b10000 7
+0J
+1I
+1H
+0G
+0F
+0E
+#170
+0$
+0?
+#175
+1$
+1?
+1R
+b0 Q
+0&
+b0 (
+b10001 ;
+b0 8
+0A
+0I
+0H
+0D
+0C
+1M
+1+
+#180
+0$
+0?
+#185
+1$
+1?
+1'
+b1 8
+1B
+#190
+0$
+0?
+#195
+1$
+1?
+b100100 O
+b1 P
+b10 8
+12
+1/
+0M
+0+
+#200
+0$
+0?
+#205
+1$
+1?
+b10000001 O
+b10 P
+b11 8
+14
+02
+0/
+1-
+#210
+0$
+0?
+#215
+1$
+1?
+b1001 O
+b11 P
+b100 8
+11
+0-
+#220
+0$
+0?
+#225
+1$
+1?
+b1100011 O
+b100 P
+b101 8
+13
+01
+1/
+1.
+#230
+0$
+0?
+#235
+1$
+1?
+b1101 O
+b101 P
+b110 8
+03
+12
+11
+0/
+0.
+#240
+0$
+0?
+#245
+1$
+1?
+b10001101 O
+b110 P
+b111 8
+1-
+#250
+0$
+0?
+#255
+1$
+1?
+b1100101 O
+b111 P
+b1000 8
+01
+1/
+1.
+0-
+#260
+0$
+0?
+#265
+1$
+1?
+b10010 O
+b1000 P
+b1001 8
+04
+13
+02
+10
+0/
+0.
+#270
+0$
+0?
+#275
+1$
+1?
+b1 O
+b1001 P
+b1010 8
+14
+03
+00
+#280
+0$
+0?
+#285
+1$
+1?
+b1101 O
+b1010 P
+b1011 8
+12
+11
+#290
+0$
+0?
+#295
+1$
+1?
+b1110110 O
+b1011 P
+b1100 8
+04
+13
+01
+10
+1/
+1.
+#300
+0$
+0?
+#305
+1$
+1?
+b111101 O
+b1100 P
+b1101 8
+14
+03
+11
+0.
+#310
+0$
+0?
+#315
+1$
+1?
+b11101101 O
+b1101 P
+b1110 8
+00
+1.
+1-
+#320
+0$
+0?
+#325
+1$
+1?
+b10001100 O
+b1110 P
+b1111 8
+04
+0/
+0.
+#330
+0$
+0?
+#335
+1$
+1?
+b11111001 O
+b1111 P
+b10000 8
+14
+02
+10
+1/
+1.
+#340
+0$
+0?
+#345
+1$
+1?
+b11000110 O
+1S
+b0 P
+b10001 8
+04
+13
+12
+01
+00
+0/
+1N
+1,
+#350
+0$
+0?
+#355
+1$
+1?
+1L
+0'
+1*
+0B
+#360
+0$
+0?
+#365
+1$
+1?
+0L
+0*
+#370
+0$
+0?
+#375
+1$
+1?
+#380
+0$
+0?
+#385
+1$
+1?
+#390
+0$
+0?
+#395
+1$
+1?
+#400
+0$
+0?

@@ -1,0 +1,22 @@
+Sequential Multiplier For the first part of the course project we will implement a sequential multiplier (sometimes referred to as a serial multiplier). A sequential multiplier uses a single adder module to accumulate partial products iteratively. A simple approach would left shift the multiplicand while right shifting the multiplier, using the lsb of multiplier to determine if the current partial product is the shifted multiplicand or zero. You should implemnt your design in “seqMult.vp” with the following interface. 
+
+// seqMult.vp
+//; my $bW = parameter( name=>"bitWidth", val=>16, doc=>"Width of input");
+module ‘mname‘ (
+	input logic [‘$bW-1‘:0] a,
+	input logic [‘$bW-1‘:0] b,
+	input logic ab_valid,
+	output logic ab_ready,
+	input logic clk,
+	input logic rst,
+	output logic z_valid,
+	output logic [‘2*$bW‘:0] z
+);
+// Empty module
+endmodule: ‘mname‘
+
+As the seqMult is busy, some control flow is need to indicate when a result is available (z valid) and when new inputs can be provided (ab ready). It is possible that there are no new inputs for the module, in which case the inputs will not be valid (ab valid). rst is active low and clk is clock.
+
+Refer the link:
+
+https://www.youtube.com/watch?v=U62iP8RkZIk

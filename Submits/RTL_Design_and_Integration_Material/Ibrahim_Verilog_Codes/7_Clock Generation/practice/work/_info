@@ -1,0 +1,30 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/8_Clock Generation/practice
+vtb
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 G2I>l]WEi2ZQ@WI^ef4XA3
+INd4a]iFM6zgTOWWkAGPOR1
+R0
+w1682195318
+8tb_clock_5.v
+Ftb_clock_5.v
+L0 7
+OL;L;10.6c;65
+!s108 1682195357.000000
+!s107 tb_clock_5.v|
+!s90 -reportprogress|300|tb_clock_5.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

@@ -11,7 +11,7 @@ endmodule
 
 module tb;
 	real s, f;
-	sample s_inst();
+	sample s_inst(); // See how the function's instance is created like a class object
 	initial begin 
 		$display("s=%m", s);
 		// $display("s=%f", s);

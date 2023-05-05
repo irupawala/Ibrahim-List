@@ -1,0 +1,594 @@
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:06:05 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# ** Error: tb_async_fifo.v(22): (vlog-2730) Undefined variable: 'clk_i'.
+# End time: 16:06:05 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_async_fifo.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:06:27 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:06:27 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt tb "+testname=test_empty_error" 
+# Start time: 16:06:27 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(35): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(71): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(65)
+#    Time: 477 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 65
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:09:35 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:09:35 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:09:36 on Apr 29,2023, Elapsed time: 0:03:09
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+testname=test_empty_error" 
+# Start time: 16:09:36 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(35): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(71): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(65)
+#    Time: 477 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 65
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:18:05 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:18:05 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:18:06 on Apr 29,2023, Elapsed time: 0:08:30
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+testname=test_empty" 
+# Start time: 16:18:06 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(35): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(71): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(65)
+#    Time: 463 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 65
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:22:16 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:22:16 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:22:16 on Apr 29,2023, Elapsed time: 0:04:10
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+testname=test_empty" 
+# Start time: 16:22:16 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(35): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(71): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(65)
+#    Time: 463 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 65
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:24:31 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:24:31 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:24:32 on Apr 29,2023, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+testname=test_empty" 
+# Start time: 16:24:32 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(35): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(71): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(65)
+#    Time: 463 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 65
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:29:31 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:29:31 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:29:31 on Apr 29,2023, Elapsed time: 0:04:59
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+testname=test_empty" 
+# Start time: 16:29:31 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(35): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(71): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(65)
+#    Time: 463 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 65
+# Causality operation skipped due to absence of debug database file
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 16:59:25 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# ** Error: ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(41): (vlog-2730) Undefined variable: 'wr_ptr_rd_clk'.
+# ** Error: ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(42): (vlog-2730) Undefined variable: 'rd_ptr_wr_clk'.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(68): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(86): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(97): near "always": syntax error, unexpected always.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(108): near "always": syntax error, unexpected always.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(121): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: tb_async_fifo.v(4): 'DEPTH' already declared in this scope.
+# ** Error: tb_async_fifo.v(4): 'WIDTH' already declared in this scope.
+# ** Error: tb_async_fifo.v(4): 'PTR_WIDTH' already declared in this scope.
+# ** Error: tb_async_fifo.v(4): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(5): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: rd_clk_i
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: wr_clk_i
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: rst_i
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: wr_en_i
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: rd_en_i
+# ** Error: tb_async_fifo.v(8): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(9): Port mode is incompatible with declaration: wdata_i
+# ** Error: tb_async_fifo.v(9): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(10): Illegal declaration after the statement near line '2'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: tb_async_fifo.v(13): Declarations not allowed in unnamed block.
+# ** Error (suppressible): tb_async_fifo.v(14): (vlog-2388) 'i' already declared in this scope (async_fifo).
+# ** Error: tb_async_fifo.v(14): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(15): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(18): Illegal declaration after the statement near line '11'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: (vlog-13069) tb_async_fifo.v(27): near "initial": syntax error, unexpected initial.
+# ** Error: (vlog-13069) tb_async_fifo.v(34): near "initial": syntax error, unexpected initial.
+# End time: 16:59:26 on Apr 29,2023, Elapsed time: 0:00:01
+# Errors: 28, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_async_fifo.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:02:27 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(70): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(88): near "end": syntax error, unexpected end, expecting ';'.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(99): near "always": syntax error, unexpected always.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(110): near "always": syntax error, unexpected always.
+# ** Error: (vlog-13069) ** while parsing file included at tb_async_fifo.v(1)
+# ** at async_fifo.v(123): near "endmodule": syntax error, unexpected endmodule.
+# ** Error: tb_async_fifo.v(4): 'DEPTH' already declared in this scope.
+# ** Error: tb_async_fifo.v(4): 'WIDTH' already declared in this scope.
+# ** Error: tb_async_fifo.v(4): 'PTR_WIDTH' already declared in this scope.
+# ** Error: tb_async_fifo.v(4): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(5): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: rd_clk_i
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: wr_clk_i
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: rst_i
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: wr_en_i
+# ** Error: tb_async_fifo.v(8): Port mode is incompatible with declaration: rd_en_i
+# ** Error: tb_async_fifo.v(8): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(9): Port mode is incompatible with declaration: wdata_i
+# ** Error: tb_async_fifo.v(9): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(10): Illegal declaration after the statement near line '2'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: tb_async_fifo.v(13): Declarations not allowed in unnamed block.
+# ** Error (suppressible): tb_async_fifo.v(14): (vlog-2388) 'i' already declared in this scope (async_fifo).
+# ** Error: tb_async_fifo.v(14): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(15): Declarations not allowed in unnamed block.
+# ** Error: tb_async_fifo.v(18): Illegal declaration after the statement near line '11'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: (vlog-13069) tb_async_fifo.v(27): near "initial": syntax error, unexpected initial.
+# ** Error: (vlog-13069) tb_async_fifo.v(34): near "initial": syntax error, unexpected initial.
+# End time: 17:02:27 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 26, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_async_fifo.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:02:51 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:02:51 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:02:53 on Apr 29,2023, Elapsed time: 0:33:22
+# Errors: 58, Warnings: 4
+# vsim -novopt tb "+testname=test_empty" 
+# Start time: 17:02:53 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(35): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(71): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(65)
+#    Time: 463 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 65
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:03:32 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:03:32 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:03:33 on Apr 29,2023, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+testname=test_empty_error" 
+# Start time: 17:03:33 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(35): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(71): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(65)
+#    Time: 477 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 65
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:13:14 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# ** Error: (vlog-13069) tb_async_fifo.v(67): near "posedge": syntax error, unexpected posedge.
+# ** Error: (vlog-13069) tb_async_fifo.v(74): near "posedge": syntax error, unexpected posedge.
+# ** Error: (vlog-13069) tb_async_fifo.v(77): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(83): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(89): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(102): near "endtask": syntax error, unexpected endtask.
+# ** Error: (vlog-13069) tb_async_fifo.v(112): near "endtask": syntax error, unexpected endtask.
+# End time: 17:13:14 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_async_fifo.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:14:53 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# ** Error: (vlog-13069) tb_async_fifo.v(67): near "posedge": syntax error, unexpected posedge.
+# ** Error: (vlog-13069) tb_async_fifo.v(74): near "posedge": syntax error, unexpected posedge.
+# ** Error: (vlog-13069) tb_async_fifo.v(77): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(83): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(89): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(102): near "endtask": syntax error, unexpected endtask.
+# ** Error: (vlog-13069) tb_async_fifo.v(112): near "endtask": syntax error, unexpected endtask.
+# End time: 17:14:53 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_async_fifo.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:15:24 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# ** Error: (vlog-13069) tb_async_fifo.v(77): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(83): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(89): near "end": syntax error, unexpected end, expecting join or "SystemVerilog keyword 'join_any'" or "SystemVerilog keyword 'join_none'".
+# ** Error: (vlog-13069) tb_async_fifo.v(102): near "endtask": syntax error, unexpected endtask.
+# ** Error: (vlog-13069) tb_async_fifo.v(112): near "endtask": syntax error, unexpected endtask.
+# End time: 17:15:24 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_async_fifo.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:16:08 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:16:08 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:16:11 on Apr 29,2023, Elapsed time: 0:12:38
+# Errors: 28, Warnings: 3
+# vsim -novopt tb "+testname=test_concurrent_wr_rd" 
+# Start time: 17:16:11 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(36): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Warning: (vsim-PLI-3826) tb_async_fifo.v(88): $dumpfile : This task should be called prior to the $dumpvars
+# task.  The $dumpfile task will be ignored.
+#    Time: 0 ns  Iteration: 0  Instance: /tb
+# ** Note: $finish    : tb_async_fifo.v(82)
+#    Time: 5209 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 82
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:18:47 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:18:47 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:18:47 on Apr 29,2023, Elapsed time: 0:02:36
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+testname=test_concurrent_wr_rd" 
+# Start time: 17:18:47 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(36): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Note: $finish    : tb_async_fifo.v(82)
+#    Time: 5209 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 82
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:19:49 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:19:49 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:19:53 on Apr 29,2023, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+testname=test_concurrent_wr_rd" 
+# Start time: 17:19:53 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(36): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Note: $finish    : tb_async_fifo.v(82)
+#    Time: 5209 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 82
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:20:15 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:20:15 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:20:18 on Apr 29,2023, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+testname=test_concurrent_wr_rd" 
+# Start time: 17:20:18 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(36): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Note: $finish    : tb_async_fifo.v(82)
+#    Time: 5209 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 82
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:21:14 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:21:15 on Apr 29,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:21:17 on Apr 29,2023, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+testname=test_concurrent_wr_rd" 
+# Start time: 17:21:17 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(36): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Note: $finish    : tb_async_fifo.v(82)
+#    Time: 1023 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 82
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:23:14 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:23:14 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:23:18 on Apr 29,2023, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+testname=test_concurrent_wr_rd" 
+# Start time: 17:23:18 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(36): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Note: $finish    : tb_async_fifo.v(82)
+#    Time: 9885 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 82
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:38:02 on Apr 29,2023
+# vlog -reportprogress 300 tb_async_fifo.v 
+# -- Compiling module async_fifo
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:38:02 on Apr 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:38:04 on Apr 29,2023, Elapsed time: 0:14:46
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+testname=test_concurrent_wr_rd" 
+# Start time: 17:38:04 on Apr 29,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/31_Asynchronous_FIFO/work.async_fifo
+# Loading work.async_fifo
+# ** Warning: (vsim-PLI-3691) tb_async_fifo.v(39): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_async_fifo.v
+# ** Note: $finish    : tb_async_fifo.v(89)
+#    Time: 7701 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_async_fifo.v line 89
+# End time: 20:50:33 on Apr 29,2023, Elapsed time: 3:12:29
+# Errors: 0, Warnings: 2

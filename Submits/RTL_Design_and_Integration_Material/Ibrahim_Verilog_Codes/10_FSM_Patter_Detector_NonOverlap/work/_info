@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/10_FSM_Patter_Detector
+vfsm_pattern_detector
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 heVT>X0K]iEh6W5LbN@cR2
+IB32H?@GfjBnG1`lPAnZZg0
+R0
+w1682310513
+8fsm_pattern_detector_moore.v
+Ffsm_pattern_detector_moore.v
+L0 12
+Z2 OL;L;10.6c;65
+Z3 !s108 1682310565.000000
+Z4 !s107 fsm_pattern_detector_moore.v|tb.v|
+Z5 !s90 -reportprogress|300|tb.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 n67PQW9@ajRkMV=G5]fRj2
+I>P7>94MAekT]SKONjd0YD1
+R0
+w1682310561
+8tb.v
+Ftb.v
+L0 3
+R2
+R3
+R4
+R5
+!i113 0
+R6
+R7

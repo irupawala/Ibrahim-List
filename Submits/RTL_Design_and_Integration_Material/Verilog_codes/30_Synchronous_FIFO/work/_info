@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/30_Synchronous_FIFO
+vfifo
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 TR<^Y>?>G8RYW>>^lm7c02
+I2BQHC;ZaTib]elW?POMnP1
+R0
+w1682758108
+8sync_fifo.v
+Fsync_fifo.v
+L0 1
+Z2 OL;L;10.6c;65
+Z3 !s108 1682758458.000000
+Z4 !s107 sync_fifo.v|tb_sync_fifo.v|
+Z5 !s90 -reportprogress|300|tb_sync_fifo.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+vtb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?D:nePfF1ckB@WCMJRTDR0
+I4XiU7nSUWf8IIdO5l4kzX1
+R0
+w1682758172
+8tb_sync_fifo.v
+Ftb_sync_fifo.v
+L0 2
+R2
+R3
+R4
+R5
+!i113 0
+R6
+R7

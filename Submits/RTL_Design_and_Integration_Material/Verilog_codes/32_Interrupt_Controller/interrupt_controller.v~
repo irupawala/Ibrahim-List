@@ -1,0 +1,7 @@
+module intr_ctrl(
+// processor
+
+
+);
+	
+endmodule

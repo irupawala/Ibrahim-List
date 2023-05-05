@@ -1,0 +1,432 @@
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 18:57:03 on Apr 22,2023
+# vlog -reportprogress 300 tb_upDownCounter.v 
+# ** Error: (vlog-7) Failed to open design unit file "tb_upDownCounter.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 18:57:03 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_upDownCounter.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 18:57:48 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 18:57:48 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt tb "+testname="test_bd_wr_bd_rd"" 
+# Start time: 18:57:48 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(93)
+#    Time: 120 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 93
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:04:15 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:04:15 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:04:16 on Apr 22,2023, Elapsed time: 0:06:28
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+testname="test_fd_wr_fd_rd"" 
+# Start time: 19:04:16 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(93)
+#    Time: 120 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 93
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:06:27 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# ** Error: (vlog-13069) tb_memory_backdoor_access.v(36): near "clk_i": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 19:06:28 on Apr 22,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/questasim64_10.6c/win64/vlog failed.
+# Error in macro ./../run.do line 2
+# C:/questasim64_10.6c/win64/vlog failed.
+#     while executing
+# "vlog tb_memory_backdoor_access.v"
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:06:42 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:06:42 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:06:45 on Apr 22,2023, Elapsed time: 0:02:29
+# Errors: 4, Warnings: 2
+# vsim -novopt tb 
+# Start time: 19:06:45 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Note: $finish    : tb_memory_backdoor_access.v(94)
+#    Time: 20615 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 94
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:08:18 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:08:18 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:08:19 on Apr 22,2023, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 1
+# vsim -novopt tb 
+# Start time: 19:08:19 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Note: $finish    : tb_memory_backdoor_access.v(94)
+#    Time: 20615 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 94
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:08:38 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:08:38 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:08:39 on Apr 22,2023, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 1
+# vsim -novopt tb 
+# Start time: 19:08:39 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Note: $finish    : tb_memory_backdoor_access.v(94)
+#    Time: 20615 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 94
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:09:08 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:09:08 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/_lib1_4.qpg" in read mode
+# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/_lib1_4.qpg" in read mode
+# doVOpenFlatFile(): INTERNAL ERROR: page load failed for file C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/tb/_primary.dbs (4:4 1:1 159 0 1782 1682215748 0x10b:0x101)
+# End time: 19:09:10 on Apr 22,2023, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 1
+# vsim -novopt tb 
+# Start time: 19:09:10 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/_lib1_4.qpg" in read mode
+# doVOpenFlatFile(): INTERNAL ERROR: Cannot obtain auxid to open C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/tb/_primary.dat
+# ** Error: (vlog-7) Failed to open design unit file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/tb/_primary.dat" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: vlog failed.
+# ** Error: subinvocation of vlog failed; return status = 1.
+# ** Error: (vsim-3171) Could not find machine code for 'C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb'.
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./../run.do PAUSED at line 6
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:09:41 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:09:41 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt tb 
+# Start time: 19:09:10 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(94)
+#    Time: 120 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 94
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:10:05 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:10:05 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:10:06 on Apr 22,2023, Elapsed time: 0:00:56
+# Errors: 2, Warnings: 3
+# vsim -novopt tb 
+# Start time: 19:10:06 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(94)
+#    Time: 120 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 94
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:11:09 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:11:09 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:11:11 on Apr 22,2023, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 2
+# vsim -novopt tb 
+# Start time: 19:11:11 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(94)
+#    Time: 120 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 94
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:12:45 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:12:46 on Apr 22,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 19:12:46 on Apr 22,2023, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+test="test_fd_wr_fd_rd"" 
+# Start time: 19:12:46 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(93)
+#    Time: 120 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 93
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:13:08 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:13:08 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:13:09 on Apr 22,2023, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+test=test_fd_wr_fd_rd" 
+# Start time: 19:13:09 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(93)
+#    Time: 20615 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 93
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:13:33 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:13:33 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:13:34 on Apr 22,2023, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+test=test_bd_wr_bd_rd" 
+# Start time: 19:13:34 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(93)
+#    Time: 120 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 93
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:14:59 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:14:59 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:15:01 on Apr 22,2023, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 2
+# vsim -novopt tb "+test=test_bd_wr_bd_rd" 
+# Start time: 19:15:01 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/_lib1_5.qpg" in read mode
+# doVOpenFlatFile(): INTERNAL ERROR: Cannot obtain auxid to open C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/tb/_primary.dat
+# ** Error: (vlog-7) Failed to open design unit file "C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work/tb/_primary.dat" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: vlog failed.
+# ** Error: subinvocation of vlog failed; return status = 1.
+# ** Error: (vsim-3171) Could not find machine code for 'C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb'.
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./../run.do PAUSED at line 5
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:15:42 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:15:43 on Apr 22,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt tb "+test=test_bd_wr_bd_rd" 
+# Start time: 19:15:01 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(93)
+#    Time: 120 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 93
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 19:16:06 on Apr 22,2023
+# vlog -reportprogress 300 tb_memory_backdoor_access.v 
+# -- Compiling module memory_handshake
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 19:16:06 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:16:07 on Apr 22,2023, Elapsed time: 0:01:06
+# Errors: 2, Warnings: 3
+# vsim -novopt tb "+test=test_fd_wr_fd_rd" 
+# Start time: 19:16:07 on Apr 22,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/13_Memory_Backdoor_Access/work.memory_handshake
+# Loading work.memory_handshake
+# ** Warning: (vsim-PLI-3691) tb_memory_backdoor_access.v(34): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb_memory_backdoor_access.v
+# ** Note: $finish    : tb_memory_backdoor_access.v(93)
+#    Time: 20615 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb_memory_backdoor_access.v line 93
+quit -sim
+# End time: 19:16:34 on Apr 22,2023, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 2
+exit
