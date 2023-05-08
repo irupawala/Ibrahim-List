@@ -6,7 +6,8 @@ vlog tb.v
 vsim -novopt tb 
 
 #adding signals to the wave
-add wave sim:/tb/dut/*
+# add wave sim:/tb/dut/*
+add wave sim:/tb/*
 
 #simulation
 run -all

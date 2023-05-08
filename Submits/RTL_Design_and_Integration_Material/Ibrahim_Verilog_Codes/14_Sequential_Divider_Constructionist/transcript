@@ -1,0 +1,274 @@
+# //  Questa Sim-64
+# //  Version 10.6c win64 Jul 26 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 23:20:03 on May 07,2023
+# vlog -reportprogress 300 tb.v 
+# -- Compiling module sequential_divider
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 23:20:03 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt tb 
+# Start time: 23:20:03 on May 07,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/14_Sequential_Divider_Constructionist/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/14_Sequential_Divider_Constructionist/work.sequential_divider
+# Loading work.sequential_divider
+# time=0 num= x den=x nd_valid=x rst=0 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=5 num= x den=x nd_valid=x rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=11 num=19 den=4 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=13 num=23 den=1 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=15 num=12 den=0 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=17 num=20 den=5 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=19 num=20 den=4 nd_valid=0 rst=1 quo= 1 rem=7 qr_valid=0 nd_ready=0
+# time=21 num=31 den=7 nd_valid=0 rst=1 quo= 2 rem=7 qr_valid=0 nd_ready=0
+# time=23 num=15 den=3 nd_valid=0 rst=1 quo= 5 rem=3 qr_valid=0 nd_ready=0
+# time=25 num= 4 den=1 nd_valid=1 rst=1 quo=11 rem=1 qr_valid=0 nd_ready=0
+# time=27 num= 2 den=4 nd_valid=0 rst=1 quo=23 rem=0 qr_valid=1 nd_ready=1
+# time=29 num=30 den=0 nd_valid=1 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=31 num= 0 den=5 nd_valid=0 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=33 num= 9 den=2 nd_valid=1 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=35 num=10 den=3 nd_valid=0 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=37 num=16 den=2 nd_valid=0 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=39 num=15 den=5 nd_valid=1 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=41 num= 0 den=1 nd_valid=0 rst=1 quo= 0 rem=2 qr_valid=1 nd_ready=1
+# time=43 num=26 den=2 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=45 num=24 den=5 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=47 num=14 den=6 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=49 num= 6 den=6 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=51 num= 6 den=5 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=53 num=26 den=6 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=55 num=17 den=1 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=1 nd_ready=1
+# time=57 num= 1 den=6 nd_valid=1 rst=1 quo= 0 rem=1 qr_valid=0 nd_ready=0
+# time=59 num=10 den=4 nd_valid=0 rst=1 quo= 0 rem=1 qr_valid=0 nd_ready=0
+# time=61 num=28 den=5 nd_valid=1 rst=1 quo= 1 rem=1 qr_valid=0 nd_ready=0
+# time=63 num=30 den=4 nd_valid=0 rst=1 quo= 2 rem=1 qr_valid=0 nd_ready=0
+# time=65 num=16 den=5 nd_valid=1 rst=1 quo= 4 rem=1 qr_valid=0 nd_ready=0
+# time=67 num= 0 den=3 nd_valid=0 rst=1 quo= 8 rem=1 qr_valid=0 nd_ready=0
+# time=69 num=27 den=4 nd_valid=1 rst=1 quo=17 rem=0 qr_valid=1 nd_ready=1
+# time=71 num= 8 den=3 nd_valid=1 rst=1 quo=17 rem=0 qr_valid=0 nd_ready=1
+# time=73 num=16 den=4 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=75 num=30 den=4 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=77 num=24 den=3 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=79 num= 9 den=4 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=81 num= 6 den=4 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=83 num=27 den=5 nd_valid=1 rst=1 quo= 1 rem=2 qr_valid=0 nd_ready=0
+# time=85 num= 6 den=3 nd_valid=1 rst=1 quo= 2 rem=2 qr_valid=1 nd_ready=1
+# time=87 num=16 den=6 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=89 num= 6 den=2 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=91 num=13 den=7 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=93 num= 2 den=4 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=95 num= 3 den=1 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=97 num=13 den=4 nd_valid=0 rst=1 quo= 1 rem=0 qr_valid=0 nd_ready=0
+# time=99 num=30 den=5 nd_valid=1 rst=1 quo= 2 rem=0 qr_valid=1 nd_ready=1
+# time=101 num= 1 den=3 nd_valid=1 rst=1 quo= 2 rem=0 qr_valid=0 nd_ready=1
+# time=103 num= 5 den=3 nd_valid=0 rst=1 quo= 0 rem=1 qr_valid=0 nd_ready=0
+# time=105 num=12 den=4 nd_valid=0 rst=1 quo= 0 rem=1 qr_valid=0 nd_ready=0
+# time=107 num= 6 den=3 nd_valid=0 rst=1 quo= 0 rem=1 qr_valid=0 nd_ready=0
+# time=109 num=11 den=6 nd_valid=1 rst=1 quo= 0 rem=1 qr_valid=0 nd_ready=0
+# time=111 num=31 den=0 nd_valid=1 rst=1 quo= 0 rem=1 qr_valid=0 nd_ready=0
+# time=113 num=22 den=1 nd_valid=1 rst=1 quo= 0 rem=1 qr_valid=0 nd_ready=0
+# time=115 num=19 den=0 nd_valid=1 rst=1 quo= 0 rem=1 qr_valid=1 nd_ready=1
+# time=117 num= 9 den=2 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=119 num=25 den=3 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=1 nd_ready=1
+# time=121 num=13 den=6 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=123 num=31 den=1 nd_valid=1 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=125 num=11 den=1 nd_valid=1 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=127 num=17 den=1 nd_valid=0 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=129 num= 6 den=4 nd_valid=0 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=131 num= 5 den=4 nd_valid=1 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=133 num=17 den=0 nd_valid=1 rst=1 quo= 1 rem=1 qr_valid=0 nd_ready=0
+# time=135 num= 6 den=5 nd_valid=0 rst=1 quo= 2 rem=1 qr_valid=1 nd_ready=1
+# time=137 num=20 den=2 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=139 num=28 den=4 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=141 num=26 den=2 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=143 num=23 den=0 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=145 num= 1 den=4 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=147 num=25 den=6 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=149 num= 6 den=6 nd_valid=1 rst=1 quo= 1 rem=1 qr_valid=1 nd_ready=1
+# time=151 num= 7 den=4 nd_valid=0 rst=1 quo= 1 rem=1 qr_valid=0 nd_ready=1
+# time=153 num= 1 den=1 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=155 num= 4 den=5 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=157 num=23 den=0 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=159 num=29 den=1 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=161 num=21 den=5 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=163 num=15 den=5 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=165 num=11 den=0 nd_valid=1 rst=1 quo= 1 rem=3 qr_valid=1 nd_ready=1
+# time=167 num= 7 den=3 nd_valid=0 rst=1 quo= 1 rem=3 qr_valid=0 nd_ready=1
+# time=169 num= 6 den=1 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=171 num= 7 den=3 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=173 num= 3 den=2 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=175 num=30 den=5 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=177 num=30 den=6 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=179 num=28 den=0 nd_valid=0 rst=1 quo= 1 rem=1 qr_valid=0 nd_ready=0
+# time=181 num=30 den=0 nd_valid=0 rst=1 quo= 2 rem=1 qr_valid=1 nd_ready=1
+# time=183 num=29 den=4 nd_valid=1 rst=1 quo= 2 rem=1 qr_valid=0 nd_ready=1
+# time=185 num=30 den=5 nd_valid=0 rst=1 quo= 2 rem=1 qr_valid=0 nd_ready=1
+# time=187 num=16 den=2 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=189 num=11 den=3 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=191 num=15 den=7 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=193 num=18 den=2 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=195 num=11 den=4 nd_valid=1 rst=1 quo= 1 rem=2 qr_valid=0 nd_ready=0
+# time=197 num=25 den=2 nd_valid=0 rst=1 quo= 3 rem=0 qr_valid=0 nd_ready=0
+# time=199 num=28 den=1 nd_valid=0 rst=1 quo= 6 rem=0 qr_valid=1 nd_ready=1
+# time=201 num= 6 den=0 nd_valid=1 rst=1 quo= 6 rem=0 qr_valid=0 nd_ready=1
+# time=203 num=15 den=7 nd_valid=1 rst=1 quo= 6 rem=0 qr_valid=0 nd_ready=1
+# time=205 num=27 den=1 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=207 num= 0 den=1 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=209 num=10 den=3 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=211 num=10 den=3 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=215 num=10 den=3 nd_valid=0 rst=1 quo= 1 rem=1 qr_valid=0 nd_ready=0
+# time=217 num=10 den=3 nd_valid=0 rst=1 quo= 2 rem=1 qr_valid=1 nd_ready=1
+# time=219 num=10 den=3 nd_valid=0 rst=1 quo= 2 rem=1 qr_valid=0 nd_ready=1
+# ** Note: $finish    : tb.v(61)
+#    Time: 261 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb.v line 61
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 23:21:52 on May 07,2023
+# vlog -reportprogress 300 tb.v 
+# -- Compiling module sequential_divider
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 23:21:52 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:21:53 on May 07,2023, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 1
+# vsim -novopt tb 
+# Start time: 23:21:53 on May 07,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/14_Sequential_Divider_Constructionist/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Ibrahim_Verilog_Codes/14_Sequential_Divider_Constructionist/work.sequential_divider
+# Loading work.sequential_divider
+# time=0 num= x den=x nd_valid=x rst=0 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=5 num= x den=x nd_valid=x rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=11 num=19 den=4 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=13 num=23 den=1 nd_valid=0 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=15 num=12 den=0 nd_valid=1 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=17 num=20 den=5 nd_valid=0 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=19 num=20 den=4 nd_valid=0 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=21 num=31 den=7 nd_valid=0 rst=1 quo= 1 rem=3 qr_valid=0 nd_ready=0
+# time=23 num=15 den=3 nd_valid=0 rst=1 quo= 2 rem=3 qr_valid=0 nd_ready=0
+# time=25 num= 4 den=1 nd_valid=1 rst=1 quo= 4 rem=3 qr_valid=1 nd_ready=1
+# time=27 num= 2 den=4 nd_valid=0 rst=1 quo= 0 rem=4 qr_valid=0 nd_ready=0
+# time=29 num=30 den=0 nd_valid=1 rst=1 quo= 0 rem=4 qr_valid=0 nd_ready=0
+# time=31 num= 0 den=5 nd_valid=0 rst=1 quo= 0 rem=4 qr_valid=0 nd_ready=0
+# time=33 num= 9 den=2 nd_valid=1 rst=1 quo= 0 rem=4 qr_valid=0 nd_ready=0
+# time=35 num=10 den=3 nd_valid=0 rst=1 quo= 1 rem=0 qr_valid=0 nd_ready=0
+# time=37 num=16 den=2 nd_valid=0 rst=1 quo= 2 rem=0 qr_valid=0 nd_ready=0
+# time=39 num=15 den=5 nd_valid=1 rst=1 quo= 4 rem=0 qr_valid=1 nd_ready=1
+# time=41 num= 0 den=1 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=43 num=26 den=2 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=45 num=24 den=5 nd_valid=0 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=47 num=14 den=6 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=49 num= 6 den=6 nd_valid=1 rst=1 quo= 0 rem=7 qr_valid=0 nd_ready=0
+# time=51 num= 6 den=5 nd_valid=1 rst=1 quo= 1 rem=5 qr_valid=0 nd_ready=0
+# time=53 num=26 den=6 nd_valid=1 rst=1 quo= 3 rem=0 qr_valid=1 nd_ready=1
+# time=55 num=17 den=1 nd_valid=0 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=57 num= 1 den=6 nd_valid=1 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=59 num=10 den=4 nd_valid=0 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=61 num=28 den=5 nd_valid=1 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=63 num=30 den=4 nd_valid=0 rst=1 quo= 1 rem=2 qr_valid=0 nd_ready=0
+# time=65 num=16 den=5 nd_valid=1 rst=1 quo= 2 rem=2 qr_valid=0 nd_ready=0
+# time=67 num= 0 den=3 nd_valid=0 rst=1 quo= 4 rem=2 qr_valid=1 nd_ready=1
+# time=69 num=27 den=4 nd_valid=1 rst=1 quo= 4 rem=2 qr_valid=0 nd_ready=1
+# time=71 num= 8 den=3 nd_valid=1 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=73 num=16 den=4 nd_valid=1 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=75 num=30 den=4 nd_valid=0 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=77 num=24 den=3 nd_valid=1 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=79 num= 9 den=4 nd_valid=1 rst=1 quo= 1 rem=3 qr_valid=0 nd_ready=0
+# time=81 num= 6 den=4 nd_valid=1 rst=1 quo= 3 rem=3 qr_valid=0 nd_ready=0
+# time=83 num=27 den=5 nd_valid=1 rst=1 quo= 6 rem=3 qr_valid=1 nd_ready=1
+# time=85 num= 6 den=3 nd_valid=1 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=87 num=16 den=6 nd_valid=1 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=89 num= 6 den=2 nd_valid=1 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=91 num=13 den=7 nd_valid=0 rst=1 quo= 0 rem=3 qr_valid=0 nd_ready=0
+# time=93 num= 2 den=4 nd_valid=1 rst=1 quo= 1 rem=7 qr_valid=0 nd_ready=0
+# time=95 num= 3 den=1 nd_valid=0 rst=1 quo= 2 rem=7 qr_valid=0 nd_ready=0
+# time=97 num=13 den=4 nd_valid=0 rst=1 quo= 5 rem=2 qr_valid=1 nd_ready=1
+# time=99 num=30 den=5 nd_valid=1 rst=1 quo= 5 rem=2 qr_valid=0 nd_ready=1
+# time=101 num= 1 den=3 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=103 num= 5 den=3 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=105 num=12 den=4 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=107 num= 6 den=3 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=109 num=11 den=6 nd_valid=1 rst=1 quo= 1 rem=2 qr_valid=0 nd_ready=0
+# time=111 num=31 den=0 nd_valid=1 rst=1 quo= 3 rem=0 qr_valid=0 nd_ready=0
+# time=113 num=22 den=1 nd_valid=1 rst=1 quo= 6 rem=0 qr_valid=1 nd_ready=1
+# time=115 num=19 den=0 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=117 num= 9 den=2 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=119 num=25 den=3 nd_valid=1 rst=1 quo= 1 rem=6 qr_valid=0 nd_ready=0
+# time=121 num=13 den=6 nd_valid=1 rst=1 quo= 2 rem=6 qr_valid=0 nd_ready=0
+# time=123 num=31 den=1 nd_valid=1 rst=1 quo= 5 rem=2 qr_valid=0 nd_ready=0
+# time=125 num=11 den=1 nd_valid=1 rst=1 quo=11 rem=0 qr_valid=0 nd_ready=0
+# time=127 num=17 den=1 nd_valid=0 rst=1 quo=22 rem=0 qr_valid=1 nd_ready=1
+# time=129 num= 6 den=4 nd_valid=0 rst=1 quo=22 rem=0 qr_valid=0 nd_ready=1
+# time=131 num= 5 den=4 nd_valid=1 rst=1 quo=22 rem=0 qr_valid=0 nd_ready=1
+# time=133 num=17 den=0 nd_valid=1 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=135 num= 6 den=5 nd_valid=0 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=137 num=20 den=2 nd_valid=1 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=139 num=28 den=4 nd_valid=1 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=141 num=26 den=2 nd_valid=1 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=143 num=23 den=0 nd_valid=0 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=145 num= 1 den=4 nd_valid=0 rst=1 quo= 1 rem=1 qr_valid=1 nd_ready=1
+# time=147 num=25 den=6 nd_valid=0 rst=1 quo= 1 rem=1 qr_valid=0 nd_ready=1
+# time=149 num= 6 den=6 nd_valid=1 rst=1 quo= 1 rem=1 qr_valid=0 nd_ready=1
+# time=151 num= 7 den=4 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=153 num= 1 den=1 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=155 num= 4 den=5 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=157 num=23 den=0 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=159 num=29 den=1 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=161 num=21 den=5 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=163 num=15 den=5 nd_valid=0 rst=1 quo= 1 rem=0 qr_valid=1 nd_ready=1
+# time=165 num=11 den=0 nd_valid=1 rst=1 quo= 1 rem=0 qr_valid=0 nd_ready=1
+# time=167 num= 7 den=3 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=169 num= 6 den=1 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=1 nd_ready=1
+# time=171 num= 7 den=3 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=173 num= 3 den=2 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=175 num=30 den=5 nd_valid=0 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=177 num=30 den=6 nd_valid=1 rst=1 quo= 0 rem=6 qr_valid=0 nd_ready=0
+# time=179 num=28 den=0 nd_valid=0 rst=1 quo= 1 rem=2 qr_valid=0 nd_ready=0
+# time=181 num=30 den=0 nd_valid=0 rst=1 quo= 3 rem=0 qr_valid=0 nd_ready=0
+# time=183 num=29 den=4 nd_valid=1 rst=1 quo= 6 rem=0 qr_valid=1 nd_ready=1
+# time=185 num=30 den=5 nd_valid=0 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=187 num=16 den=2 nd_valid=0 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=189 num=11 den=3 nd_valid=0 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=191 num=15 den=7 nd_valid=0 rst=1 quo= 0 rem=5 qr_valid=0 nd_ready=0
+# time=193 num=18 den=2 nd_valid=0 rst=1 quo= 1 rem=5 qr_valid=0 nd_ready=0
+# time=195 num=11 den=4 nd_valid=1 rst=1 quo= 3 rem=5 qr_valid=0 nd_ready=0
+# time=197 num=25 den=2 nd_valid=0 rst=1 quo= 7 rem=1 qr_valid=1 nd_ready=1
+# time=199 num=28 den=1 nd_valid=0 rst=1 quo= 7 rem=1 qr_valid=0 nd_ready=1
+# time=201 num= 6 den=0 nd_valid=1 rst=1 quo= 7 rem=1 qr_valid=0 nd_ready=1
+# time=203 num=15 den=7 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=0
+# time=205 num=27 den=1 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=1 nd_ready=1
+# time=207 num= 0 den=1 nd_valid=0 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=209 num=10 den=3 nd_valid=1 rst=1 quo= 0 rem=0 qr_valid=0 nd_ready=1
+# time=211 num=10 den=3 nd_valid=0 rst=1 quo= 0 rem=2 qr_valid=0 nd_ready=0
+# time=221 num=10 den=3 nd_valid=0 rst=1 quo= 1 rem=4 qr_valid=0 nd_ready=0
+# time=223 num=10 den=3 nd_valid=0 rst=1 quo= 3 rem=1 qr_valid=1 nd_ready=1
+# time=225 num=10 den=3 nd_valid=0 rst=1 quo= 3 rem=1 qr_valid=0 nd_ready=1
+# ** Note: $finish    : tb.v(61)
+#    Time: 261 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb.v line 61
+# End time: 23:22:41 on May 07,2023, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 1
