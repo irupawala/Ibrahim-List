@@ -14,53 +14,129 @@
 # //
 do ../run.do
 # QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 13:35:00 on Apr 30,2023
-# vlog -reportprogress 300 intr_ctrl.v 
-# -- Compiling module intr_ctrl
-# 
-# Top level modules:
-# 	intr_ctrl
-# End time: 13:35:00 on Apr 30,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -novopt tb 
-# Start time: 13:35:01 on Apr 30,2023
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# ** Error: (vsim-3170) Could not find 'tb'.
-#         Searched libraries:
-#             C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./../run.do PAUSED at line 5
-do ../run.do
-# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 13:35:26 on Apr 30,2023
-# vlog -reportprogress 300 tb_intr_ctrl.v 
-# -- Compiling module intr_ctrl
-# -- Compiling module tb
-# ** Error: (vlog-13069) tb_intr_ctrl.v(21): near "endmodule": syntax error, unexpected endmodule, expecting ';' or ','.
-# End time: 13:35:26 on Apr 30,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_10.6c/win64/vlog failed.
-# Error in macro ./../run.do line 2
-# C:/questasim64_10.6c/win64/vlog failed.
-#     while executing
-# "vlog tb_intr_ctrl.v"
-do ../run.do
-# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
-# Start time: 13:35:46 on Apr 30,2023
-# vlog -reportprogress 300 tb_intr_ctrl.v 
+# Start time: 12:06:45 on May 09,2023
+# vlog -reportprogress 300 tb.v 
 # -- Compiling module intr_ctrl
 # -- Compiling module tb
 # 
 # Top level modules:
 # 	tb
-# End time: 13:35:46 on Apr 30,2023, Elapsed time: 0:00:00
+# End time: 12:06:45 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt tb 
-# Start time: 13:35:01 on Apr 30,2023
+# vsim -novopt tb "+test_name=test_random_priority" "+seed=1235" 
+# Start time: 12:06:45 on May 09,2023
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work.tb
 # Loading work.tb
 # Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work.intr_ctrl
 # Loading work.intr_ctrl
+# ** Warning: (vsim-PLI-3691) tb.v(52): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb.v
+# ** Warning: (vsim-PLI-3691) tb.v(53): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb.v
+# index = 0, number = 10
+# index = 1, number = 13
+# index = 2, number = 15
+# index = 3, number = 3
+# index = 4, number = 12
+# index = 5, number = 15
+# index = 6, number = 3
+# index = 7, number = 4
+# index = 8, number = 5
+# index = 9, number = 3
+# index = 10, number = 7
+# index = 11, number = 11
+# index = 12, number = 0
+# index = 13, number = 2
+# index = 14, number = 9
+# index = 15, number = 12
+# ** Note: $finish    : tb.v(82)
+#    Time: 1835 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb.v line 82
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 12:19:20 on May 09,2023
+# vlog -reportprogress 300 tb.v 
+# -- Compiling module intr_ctrl
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 12:19:20 on May 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:19:21 on May 09,2023, Elapsed time: 0:12:36
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+test_name=test_lowest_peri_lowest_priority" "+seed=1235" 
+# Start time: 12:19:21 on May 09,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work.intr_ctrl
+# Loading work.intr_ctrl
+# ** Warning: (vsim-PLI-3691) tb.v(52): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb.v
+# ** Warning: (vsim-PLI-3691) tb.v(53): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb.v
+# ** Note: $finish    : tb.v(84)
+#    Time: 1845 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb.v line 84
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 12:19:54 on May 09,2023
+# vlog -reportprogress 300 tb.v 
+# -- Compiling module intr_ctrl
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 12:19:54 on May 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:19:55 on May 09,2023, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+test_name=test_lowest_peri_highest_priority" "+seed=1235" 
+# Start time: 12:19:55 on May 09,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work.intr_ctrl
+# Loading work.intr_ctrl
+# ** Warning: (vsim-PLI-3691) tb.v(52): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb.v
+# ** Warning: (vsim-PLI-3691) tb.v(53): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb.v
+# ** Note: $finish    : tb.v(84)
+#    Time: 1845 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb.v line 84
+do ../run.do
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 12:20:38 on May 09,2023
+# vlog -reportprogress 300 tb.v 
+# -- Compiling module intr_ctrl
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 12:20:38 on May 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:20:38 on May 09,2023, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 3
+# vsim -novopt tb "+test_name=test_lowest_peri_highest_priority" "+seed=1235" 
+# Start time: 12:20:38 on May 09,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work.tb
+# Loading work.tb
+# Refreshing C:/Users/ibrah/OneDrive/Documents/Github/Ibrahim-List/Submits/RTL_Design_and_Integration_Material/Verilog_codes/32_Interrupt_Controller/work.intr_ctrl
+# Loading work.intr_ctrl
+# ** Warning: (vsim-PLI-3691) tb.v(52): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb.v
+# ** Warning: (vsim-PLI-3691) tb.v(53): Expected a system task, not a system function '$value$plusargs'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb File: tb.v
+# ** Note: $finish    : tb.v(84)
+#    Time: 1845 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at tb.v line 84
+# End time: 12:23:38 on May 09,2023, Elapsed time: 0:03:00
+# Errors: 0, Warnings: 3

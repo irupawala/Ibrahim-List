@@ -1,0 +1,32 @@
+
+https://eclipse.umbc.edu/robucci/cmpeRSD/
+
+
+
+
+https://www.facebook.com/reel/1167189517222991?s=ifu
+https://jobs.cisco.com/jobs/ProjectDetail/Asic-Design-Engineer/1394058
+
+Groq
+
+
+
+
+
+
+Clk and D are called Timing Arcs as the time from input to Q depends on them
+Reset is alsi w.r.t clock hence it is called as recovery and removal arc
+combionation circuit has direct arc from input to output
+
+SS = RT - AT
+
+AT_su = Tbuff_max + TCLK_Q_max + Tcomb_max = 2+11+5 = 18
+AT_hold = Tbuff_min + TCLK_Q_min + Tcomb_min = 1+9+3 = 13
+
+RT_su = Tbuff_min + Tperiod - Tsu = 2(1)+10-2 = 10
+RT_hold = Tbuff_max + Thold = 2(2)+1 = 5
+
+Setup Slack = -8
+Hold Slack = 8
+
+What is slew rate ?
